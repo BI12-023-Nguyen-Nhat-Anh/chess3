@@ -28,9 +28,10 @@
                     android:layout_centerInParent="true"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/border_radius_for_logo_active"
+                    android:elevation="20dp"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:elevation="20dp">
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -38,11 +39,12 @@
                         android:text="King"
                         android:textColor="@color/black"
                         android:textSize="50dp" />
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
-                        android:src="@drawable/King" />
+                        android:src="@drawable/king" />
                 </LinearLayout>
 
 
@@ -64,7 +66,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/Knight"
+                        android:src="@drawable/knight"
                         android:layout_margin="20dp"/>
                 </LinearLayout>
 
@@ -87,7 +89,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/Queen"
+                        android:src="@drawable/queen"
                         android:layout_margin="20dp"/>
                 </LinearLayout>
             </RelativeLayout>
