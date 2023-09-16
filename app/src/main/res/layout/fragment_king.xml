@@ -108,14 +108,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="20dp"
-                        android:text="About the pawn"
+                        android:text="About the King"
                         android:textColor="@color/white"
                         android:textSize="35dp" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text=" The king's role is to protect and keep himself safe. If the king is checked by the opponent (ie attacked), the player must find a way to get the king out of check or block the opponent.\n The king's special rule is not to move into checkered squares or be attacked by the opponent's pieces. If the king is captured, that is, checkmate, the player will lose the match."
+                        android:text="King in chess is a king piece, one of the most important pieces in the game. The king is placed in the center square of the chess board and can move one square horizontally, vertically or diagonally.\n\nThe king's role is to protect and keep himself safe. If the king is checked by the opponent (ie attacked), the player must find a way to remove the king from the check situation or block the opponent.\n\nThe king's special rule is not to move into the positions. The square is checked or attacked by an opponent's piece. If the king is captured, that is, checkmate, the player will lose the match."
                         android:textColor="@color/white" />
                 </LinearLayout>
 
@@ -154,7 +154,8 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="45dp">
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginBottom="70dp">
                     <ImageView
                         android:layout_width="250dp"
                         android:layout_height="150dp"

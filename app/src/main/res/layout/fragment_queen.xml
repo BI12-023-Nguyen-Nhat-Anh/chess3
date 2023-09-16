@@ -35,14 +35,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Pawn"
+                        android:text="Queen"
                         android:textColor="@color/black"
                         android:textSize="50dp" />
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
-                        android:src="@drawable/Pawn" />
+                        android:src="@drawable/Queen" />
                 </LinearLayout>
 
 
@@ -64,7 +64,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/Castle"
+                        android:src="@drawable/King"
                         android:layout_margin="20dp"/>
                 </LinearLayout>
 
@@ -87,7 +87,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/Knight"
+                        android:src="@drawable/Bishop"
                         android:layout_margin="20dp"/>
                 </LinearLayout>
             </RelativeLayout>
@@ -108,14 +108,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="20dp"
-                        android:text="About the pawn"
+                        android:text="About the Queen"
                         android:textColor="@color/white"
                         android:textSize="35dp" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="A pawn, also known as a pawn, is a basic piece in the game of chess. It is represented by a small cylindrical flagstone, often symbolized by a small cone shape.\n\nInitially, the pawns are placed in the second row on each side of the board. The pawn has the ability to move forward, moving one space at a time. However, on the first move, the pawn can move two spaces instead of one.\n\nPawns have two main functions in the game of chess. First, they have the ability to attack and gain an advantage on the board. When the pawn moves forward and reaches the opponent's last row, it can be promoted to any other piece on the board, such as a queen, bishop, bishop or rook. This creates a great threat and potential power for good.\n\nSecond, pawns play an important role in building and defending defensive structures. When pawns together with other pieces form a solid defensive structure, they can protect the king and other important pieces from enemy attacks. Combination and cooperation between pawns in a phalanx can create a powerful defensive wall.\n\nHowever, being good also has its downsides. Because pawns cannot move back and only move one space at a time, they can be easily blocked and controlled by opposing pieces. This requires players to pay attention to good protection and support by moving other pieces and creating a protective network for them."
+                        android:text="The queen is the most important piece in the game of chess. It is represented by a queen with the ability to move strongly and flexibly on the chessboard. The queen can move horizontally, vertically and diagonally to all squares on the board.\n\nWith the ability to move freely in many directions, the queen becomes a very powerful piece. It can attack and checkmate from afar, and can protect and support other pieces in the match. The queen can move through multiple rows and columns, creating wide attack paths and putting strong pressure on opponents.\n\nThe queen's variety and strength make it an important target in fight. If a player loses the queen, this usually means losing an important piece and losing a large part of their strength and ability to attack."
                         android:textColor="@color/white" />
                 </LinearLayout>
 
