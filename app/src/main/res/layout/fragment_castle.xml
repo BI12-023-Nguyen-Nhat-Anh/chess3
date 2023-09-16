@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PawnFragment"
-    android:scrollbars="vertical">
+    android:scrollbars="vertical"
+    android:background="#151a22">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -31,18 +32,11 @@
                     android:gravity="center"
                     android:orientation="vertical"
                     android:elevation="20dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Castle"
-                        android:textColor="@color/black"
-                        android:textSize="50dp" />
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
-                        android:src="@drawable/castle" />
+                        android:src="@drawable/rock" />
                 </LinearLayout>
 
 
@@ -64,7 +58,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/bishop"
+                        android:src="@drawable/bishop_unactive"
                         android:layout_margin="20dp"/>
                 </LinearLayout>
 
@@ -87,7 +81,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/pawn"
+                        android:src="@drawable/pawn_unactive"
                         android:layout_margin="20dp"/>
                 </LinearLayout>
             </RelativeLayout>
@@ -95,7 +89,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#151a22"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -108,7 +101,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="20dp"
-                        android:text="About the Castle"
+                        android:text="About the Rock"
                         android:textColor="@color/white"
                         android:textSize="35dp" />
 
@@ -116,7 +109,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="The rook or the castle is an important piece in the game of chess. It is represented by a vehicle with the ability to move along horizontal and vertical lines on the chessboard.\n\nWith the ability to move far and without restrictions on the path, the vehicle can pass through empty squares. and other chess pieces in the same row or column. It can move from one end of the board to another in one go.\n\nThe rook's strength lies in its ability to attack and defend in rows and columns. The rook can pose a great threat on the board and can attack many enemy pieces at once. It can also be used to protect the king and create a strong defensive barrier.\n\nIn chess strategy, the use of the rook plays an important role. Using rooks to control rows and columns, attack opposing pieces and create strategic paths is an important element in the match."
+                        android:text="The rook is an important piece in the game of chess. It is represented by a vehicle with the ability to move along horizontal and vertical lines on the chessboard.\n\nWith the ability to move far and without restrictions on the path, the vehicle can pass through empty squares. and other chess pieces in the same row or column. It can move from one end of the board to another in one go.\n\nThe rook's strength lies in its ability to attack and defend in rows and columns. The rook can pose a great threat on the board and can attack many enemy pieces at once. It can also be used to protect the king and create a strong defensive barrier.\n\nIn chess strategy, the use of the rook plays an important role. Using rooks to control rows and columns, attack opposing pieces and create strategic paths is an important element in the match."
                         android:textColor="@color/white" />
                 </LinearLayout>
 

@@ -4,11 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PawnFragment"
-    android:scrollbars="vertical">
+    android:scrollbars="vertical"
+    android:background="#151a22">
 
     <!-- TODO: Update blank fragment layout -->
 
     <ScrollView
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
@@ -31,17 +33,9 @@
                     android:gravity="center"
                     android:orientation="vertical"
                     android:elevation="20dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Bishop"
-                        android:textColor="@color/black"
-                        android:textSize="50dp" />
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="20dp"
+                        android:layout_height="210dp"
                         android:src="@drawable/bishop" />
                 </LinearLayout>
 
@@ -64,7 +58,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/queen"
+                        android:src="@drawable/queen_unactive"
                         android:layout_margin="20dp"/>
                 </LinearLayout>
 
@@ -87,7 +81,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/castle"
+                        android:src="@drawable/rock_unactive"
                         android:layout_margin="20dp"/>
                 </LinearLayout>
             </RelativeLayout>
@@ -95,7 +89,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#151a22"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
