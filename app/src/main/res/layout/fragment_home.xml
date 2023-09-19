@@ -4,67 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#326BFF"
+    android:background="#2B4DFB"
     tools:context=".home_Fragment">
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Welcome, User"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageButton
+            android:id="@+id/butt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="20dp"
+            android:background="#2B4DFB"
+            android:src="@drawable/icon"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/butt1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ava" />
+
+
+        <ImageView
+            android:id="@+id/RcmBoardImageView"
+            android:layout_width="380dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/frame_5" />
+
+        <ImageView
+            android:id="@+id/frame_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/RcmBoardImageView"
+            android:src="@drawable/frame_1" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/ToolBarImageView"
-                android:layout_width="wrap_content"
-                android:layout_height="55dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="#326BFF"
-                android:src="@drawable/frame_3" />
-
-            <ImageView
-                android:id="@+id/RcmBoardImageView"
-                android:layout_width="380dp"
-                android:layout_height="250dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="60dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/frame_5" />
-
-            <!--            <androidx.viewpager.widget.ViewPager-->
-            <!--                android:id="@+id/viewPager"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="192dp"-->
-            <!--                android:layout_marginStart="20dp"-->
-            <!--                android:layout_marginTop="60dp"-->
-            <!--                android:layout_marginEnd="20dp"-->
-            <!--                android:layout_marginBottom="20dp" />-->
-
-
-            <ImageView
-                android:id="@+id/frame_layout2"
-                android:layout_width="wrap_content"
-                android:layout_height="2488dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="250dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/frame_1" />
-
             <TextView
                 android:id="@+id/text_view"
-                android:layout_width="190dp"
-                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="340dp"
                 android:text="Feature Courses"
                 android:textColor="#FFFFFF"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
 
             <ImageView
                 android:id="@+id/see_all"
@@ -87,35 +94,38 @@
                 android:textColor="#8a8c91" />
 
 
-            <ImageView
-                android:id="@+id/frame_7"
-                android:layout_width="161dp"
-                android:layout_height="166dp"
-                android:layout_below="@id/text_view2"
-                android:layout_alignLeft="@id/text_view2"
-                android:layout_marginLeft="11dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/frame_7" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
 
-            <ImageView
-                android:id="@+id/frame_7_1"
-                android:layout_width="161dp"
-                android:layout_height="161dp"
-                android:layout_below="@id/see_all"
-                android:layout_marginLeft="215dp"
-                android:layout_marginTop="39dp"
-                android:src="@drawable/frame_7" />
+                <ImageView
+                    android:id="@+id/feature_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="460dp"
+                    android:src="@drawable/frame_7" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="460dp"
+                    android:layout_toRightOf="@id/feature_1"
+                    android:src="@drawable/frame_7" />
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/text_view3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/text_view"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="300dp"
                 android:text="Chess Challenges"
                 android:textColor="#FFFFFF"
-                android:textSize="25sp"
-                android:layout_below="@id/text_view"
-                android:layout_marginTop="230dp"
-                android:layout_marginLeft="30dp"/>
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/text_view4"
@@ -126,65 +136,94 @@
                 android:text="Time to level up your play skills"
                 android:textColor="#8a8c91" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/see_all"
                 android:layout_alignRight="@id/text_view3"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="234dp"
-                android:layout_marginRight="-108dp"
+                android:layout_marginTop="312dp"
+                android:layout_marginRight="-101dp"
                 android:src="@drawable/see_all" />
 
             <ImageView
                 android:id="@+id/task1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/frame_8"
                 android:layout_below="@id/text_view4"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="21dp"
-                />
+                android:src="@drawable/frame_8" />
 
             <ImageView
                 android:id="@+id/task2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/frame_8"
                 android:layout_below="@id/task1"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="21dp"/>
+                android:src="@drawable/frame_8" />
 
             <ImageView
                 android:id="@+id/task3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/frame_8"
                 android:layout_below="@id/task2"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="21dp"
-                />
+                android:src="@drawable/frame_8" />
 
             <ImageView
                 android:id="@+id/join_courses"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/frame_10"
                 android:layout_below="@id/task3"
-                android:layout_marginTop="100dp"
-                android:layout_marginLeft="21.5dp"
-                />
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/theme_chess" />
 
-            <ImageButton
+            <TextView
+                android:id="@+id/text_view6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/join_courses"
+                android:layout_centerHorizontal="true"
+                android:text="Join our courses"
+                android:textSize="25sp"
+                android:textcolor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/text_view7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view6"
+                android:layout_centerHorizontal="true"
+                android:text="Lorem ipsum dolor sit amet, consectetur"
+                android:textcolor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view7"
+                android:layout_centerHorizontal="true"
+                android:text="adipiscing elit, sed do eiusmod tempor incididun"
+                android:textcolor="#FFFFFF" />
+
+            <ImageView
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/task3"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="588dp"
-                android:layout_marginBottom="350dp"
+                android:layout_below="@id/text_view7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
                 android:src="@drawable/button" />
 
         </RelativeLayout>
-    </LinearLayout>
+    </RelativeLayout>
 </ScrollView>
