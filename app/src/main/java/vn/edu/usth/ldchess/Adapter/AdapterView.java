@@ -7,6 +7,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import vn.edu.usth.ldchess.Intro;
 import vn.edu.usth.ldchess.List_Lesson;
+import vn.edu.usth.ldchess.home_Fragment;
 
 public class AdapterView extends FragmentStateAdapter {
     public AdapterView(@NonNull FragmentActivity fragmentActivity) {
@@ -18,7 +19,7 @@ public class AdapterView extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position){
             case 0:
-                return true;
+                return new home_Fragment();
             case 1:
                 return new Intro();
             case 2:
@@ -28,6 +29,7 @@ public class AdapterView extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 0;
+
+        return 3;
     }
 }
