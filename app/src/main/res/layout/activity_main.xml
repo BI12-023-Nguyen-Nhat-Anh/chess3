@@ -10,29 +10,27 @@
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav_bottom">
 
     </androidx.viewpager2.widget.ViewPager2>
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:elevation="5dp"
-        android:translationZ="10dp">
+
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:id="@+id/nav_bottom"
             app:menu="@menu/icon_nav"
             app:itemIconTint="@color/color_nav"
             app:itemTextColor="@color/color_nav"
-            android:background="#2D3542">
+            android:background="#2D3542"
+            android:layout_alignParentBottom="true"
+            android:elevation="5dp"
+            android:translationZ="10dp">
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
-    </androidx.cardview.widget.CardView>
 
 
 </RelativeLayout>
