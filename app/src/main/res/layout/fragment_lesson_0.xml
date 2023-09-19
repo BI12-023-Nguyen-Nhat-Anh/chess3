@@ -1,14 +1,957 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lesson_0">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Intro"
+    android:orientation="vertical"
+    android:id="@+id/detail_tactic_intro"
+    android:background="#000000">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp">
 
-</FrameLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:adjustViewBounds="true"
+                android:background="#000"
+                android:src="@drawable/lesson_0_img">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:layout_alignParentBottom="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play Chess for beginer"
+                        android:textSize="24sp"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:textStyle="bold"
+                        android:layout_weight="3">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_play"
+                        android:layout_weight="1"
+                        android:layout_gravity="end">
+
+                    </ImageView>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    android:textSize="14sp"
+                    android:textColor="#80FAFAFA"
+                    android:fontFamily="@font/dmsans_variablefont_opsz"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="32dp">
+
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/border_radius_for_lesson"
+
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PLAYING CHESS BASIC"
+
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:paddingTop="9dp">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/border_radius_for_lesson"
+
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PLAYING CHESS BASIC"
+
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:paddingTop="9dp">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/border_radius_for_lesson"
+
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PLAYING CHESS BASIC"
+
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:paddingTop="9dp">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/border_radius_for_lesson"
+
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PLAYING CHESS BASIC"
+
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:paddingTop="9dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6D7576">
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="36dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="19dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All parts (7)"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/dmsans_variablefont_opsz"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#000"
+                    android:layout_marginTop="32dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/music_pic"
+                        android:layout_alignParentLeft="true"
+                        android:adjustViewBounds="true"
+
+                        android:layout_weight="0"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+                            android:text="Introduction: The history of chess"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingBottom="5dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                            android:text="5May 1 hr 30 min"
+                            android:textColor="#80EEEEEE"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+                        android:layout_weight="0"
+
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/play"
+                            android:gravity="center_horizontal"
+                            >
+                        </ImageView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/eye"
+                                android:paddingTop="15dp">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="120"
+                                android:textColor="#80FFFFFF"
+                                android:gravity="center"
+                                android:fontFamily="@font/dmsans_variablefont_opsz"
+                                android:textSize="14sp"
+                                android:paddingTop="10dp">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#000"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/music_pic"
+                        android:layout_alignParentLeft="true"
+                        android:adjustViewBounds="true"
+
+                        android:layout_weight="0"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+                            android:text="Lesson 1: The history of chess"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingBottom="5dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                            android:text="5May 1 hr 30 min"
+                            android:textColor="#80EEEEEE"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+                        android:layout_weight="0"
+
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/play"
+                            android:gravity="center_horizontal"
+                            >
+                        </ImageView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/eye"
+                                android:paddingTop="15dp">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="120"
+                                android:textColor="#80FFFFFF"
+                                android:gravity="center"
+                                android:fontFamily="@font/dmsans_variablefont_opsz"
+                                android:textSize="14sp"
+                                android:paddingTop="10dp">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#000"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/music_pic"
+                        android:layout_alignParentLeft="true"
+                        android:adjustViewBounds="true"
+
+                        android:layout_weight="0"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+                            android:text="Lesson 2: The history of chess"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingBottom="5dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                            android:text="5May 1 hr 30 min"
+                            android:textColor="#80EEEEEE"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+                        android:layout_weight="0"
+
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/play"
+                            android:gravity="center_horizontal"
+                            >
+                        </ImageView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/eye"
+                                android:paddingTop="15dp">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="120"
+                                android:textColor="#80FFFFFF"
+                                android:gravity="center"
+                                android:fontFamily="@font/dmsans_variablefont_opsz"
+                                android:textSize="14sp"
+                                android:paddingTop="10dp">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#000"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/music_pic"
+                        android:layout_alignParentLeft="true"
+                        android:adjustViewBounds="true"
+
+                        android:layout_weight="0"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+                            android:text="Lesson 3: The history of chess"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingBottom="5dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                            android:text="5May 1 hr 30 min"
+                            android:textColor="#80EEEEEE"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+                        android:layout_weight="0"
+
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/play"
+                            android:gravity="center_horizontal"
+                            >
+                        </ImageView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/eye"
+                                android:paddingTop="15dp">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="120"
+                                android:textColor="#80FFFFFF"
+                                android:gravity="center"
+                                android:fontFamily="@font/dmsans_variablefont_opsz"
+                                android:textSize="14sp"
+                                android:paddingTop="10dp">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#000"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/music_pic"
+                        android:layout_alignParentLeft="true"
+                        android:adjustViewBounds="true"
+
+                        android:layout_weight="0"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+                            android:text="Lesson 4: The history of chess"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingBottom="5dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                            android:text="5May 1 hr 30 min"
+                            android:textColor="#80EEEEEE"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+                        android:layout_weight="0"
+
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/play"
+                            android:gravity="center_horizontal"
+                            >
+                        </ImageView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/eye"
+                                android:paddingTop="15dp">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="120"
+                                android:textColor="#80FFFFFF"
+                                android:gravity="center"
+                                android:fontFamily="@font/dmsans_variablefont_opsz"
+                                android:textSize="14sp"
+                                android:paddingTop="10dp">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#000"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/music_pic"
+                        android:layout_alignParentLeft="true"
+                        android:adjustViewBounds="true"
+
+                        android:layout_weight="0"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+                            android:text="Lesson 5: The history of chess"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingBottom="5dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                            android:text="5May 1 hr 30 min"
+                            android:textColor="#80EEEEEE"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+                        android:layout_weight="0"
+
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/play"
+                            android:gravity="center_horizontal"
+                            >
+                        </ImageView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/eye"
+                                android:paddingTop="15dp">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="120"
+                                android:textColor="#80FFFFFF"
+                                android:gravity="center"
+                                android:fontFamily="@font/dmsans_variablefont_opsz"
+                                android:textSize="14sp"
+                                android:paddingTop="10dp">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#000"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/music_pic"
+                        android:layout_alignParentLeft="true"
+                        android:adjustViewBounds="true"
+
+                        android:layout_weight="0"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+                            android:text="Lesson 6: The history of chess"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:paddingBottom="5dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                            android:text="5May 1 hr 30 min"
+                            android:textColor="#80EEEEEE"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+                        android:layout_weight="0"
+
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/play"
+                            android:gravity="center_horizontal"
+                            >
+                        </ImageView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/eye"
+                                android:paddingTop="15dp">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="120"
+                                android:textColor="#80FFFFFF"
+                                android:gravity="center"
+                                android:fontFamily="@font/dmsans_variablefont_opsz"
+                                android:textSize="14sp"
+                                android:paddingTop="10dp">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
