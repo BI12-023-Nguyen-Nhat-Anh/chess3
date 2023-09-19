@@ -27,7 +27,7 @@
             app:menu="@menu/icon_nav"
             app:itemIconTint="@color/color_nav"
             app:itemTextColor="@color/color_nav"
-            android:background="@color/white">
+            android:background="#2D3542">
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
