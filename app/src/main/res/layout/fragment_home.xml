@@ -196,7 +196,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="Join our courses"
                 android:textSize="25sp"
-                android:textcolor="#FFFFFF" />
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/text_view7"
@@ -205,7 +205,7 @@
                 android:layout_below="@id/text_view6"
                 android:layout_centerHorizontal="true"
                 android:text="Lorem ipsum dolor sit amet, consectetur"
-                android:textcolor="#FFFFFF" />
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -213,7 +213,7 @@
                 android:layout_below="@id/text_view7"
                 android:layout_centerHorizontal="true"
                 android:text="adipiscing elit, sed do eiusmod tempor incididun"
-                android:textcolor="#FFFFFF" />
+                android:textColor="#FFFFFF" />
 
             <ImageView
                 android:id="@+id/button"
