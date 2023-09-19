@@ -25,6 +25,7 @@ public class AdapterView extends FragmentStateAdapter {
             case 2:
                 return new List_Lesson();
         }
+        return null;
     }
 
     @Override
