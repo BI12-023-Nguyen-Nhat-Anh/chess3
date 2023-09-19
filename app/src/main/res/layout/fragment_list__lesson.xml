@@ -65,6 +65,55 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="27dp">
 
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:adjustViewBounds="true"
+                    android:background="#000"
+                    android:src="@drawable/lesson1">
+
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="24dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="History of Chess"
+                        android:textSize="24sp"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:layout_alignParentLeft="true"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In-demand chess courses."
+                        android:textSize="15sp"
+                        android:textColor="#80FFFFFF"
+
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        >
+
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="27dp">
+
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
