@@ -1,91 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Intro"
-    android:orientation="vertical"
-    android:id="@+id/detail_tactic_intro"
-    android:background="#000000">
+    tools:context=".Content1">
 
-
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:scrollbars="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/intro_img">
-
-            </ImageView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#000000"
-            android:id="@+id/button_intro_discussion"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                    android:gravity="center"
-                    android:padding="15dp"
-
-                    android:textColor="#FFFFFF"
-                    android:text="Lessons"
-                    android:textSize="12sp"
-                    android:textStyle="bold">
-
-                </TextView>
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="2dp"
-                    android:background="#6D7576">
-                </View>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Disscusion"
-                    android:textSize="12sp"
-                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                    android:gravity="center"
-                    android:textColor="#FFFFFF"
-                    android:padding="15dp"
-
-                    android:textStyle="bold">
-                </TextView>
-            </LinearLayout>
-
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="#6D7576">
-        </View>
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,7 +19,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Introduction: The history of chess"
+                android:text="Giới thiệu: Lịch sử của Cờ Vua"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"
@@ -110,7 +32,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:text="Lịch sử cờ vua bắt nguồn từ khoảng 1500 năm trước, bắt đầu ở Bắc Ấn Độ và sau đó phổ biến ra toàn lục địa Châu Á. Cờ vua được đem đến Châu Âu bởi Đế quốc Hồi giáo Ả Rập. Luật chơi cờ vua thay đổi rất nhiều lần cho đến thập kỷ 1880. Giải vô địch cờ vua thế giới chính thức đầu tiên được tổ chức vào năm 1886."
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"
@@ -173,7 +95,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardBackgroundColor="#000"
+
                     android:layout_marginTop="24dp"
                     android:orientation="horizontal"
                     >
@@ -273,7 +195,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardBackgroundColor="#000"
+
                     android:layout_marginTop="24dp"
                     android:orientation="horizontal"
                     >
@@ -373,7 +295,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardBackgroundColor="#000"
+
                     android:layout_marginTop="24dp"
                     android:orientation="horizontal"
                     >
@@ -473,7 +395,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardBackgroundColor="#000"
+
                     android:layout_marginTop="24dp"
                     android:orientation="horizontal"
                     >
@@ -573,7 +495,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardBackgroundColor="#000"
+
                     android:layout_marginTop="24dp"
                     android:orientation="horizontal"
                     >
@@ -673,7 +595,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardBackgroundColor="#000"
+
                     android:layout_marginTop="24dp"
                     android:orientation="horizontal"
                     >
@@ -773,7 +695,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardBackgroundColor="#000"
+
                     android:layout_marginTop="24dp"
                     android:orientation="horizontal"
                     >
@@ -880,7 +802,6 @@
             </LinearLayout>
 
         </LinearLayout>
+    </ScrollView>
 
-    </LinearLayout>
-
-</androidx.core.widget.NestedScrollView>
+</FrameLayout>

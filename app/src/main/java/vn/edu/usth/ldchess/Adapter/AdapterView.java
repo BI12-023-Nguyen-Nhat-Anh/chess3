@@ -6,7 +6,6 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import vn.edu.usth.ldchess.Lesson_0;
-import vn.edu.usth.ldchess.Nanh_detailFragment;
 import vn.edu.usth.ldchess.exploreFragment;
 import vn.edu.usth.ldchess.header_profileFragment;
 import vn.edu.usth.ldchess.home_Fragment;

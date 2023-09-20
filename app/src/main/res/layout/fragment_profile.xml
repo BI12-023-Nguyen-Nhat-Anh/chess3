@@ -18,14 +18,14 @@
                 <fragment
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:name="vn.edu.usth.ldchess.header_profileFragment"
+                    android:name="vn.edu.usth.ldchess.HeaderProfileFragment"
                     tools:layout="@layout/fragment_header_profile"/>
 
                 <fragment
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:name="vn.edu.usth.ldchess.Nanh_detailFragment"
-                    tools:layout="@layout/fragment_nanh_detail"/>
+                    android:name="vn.edu.usth.ldchess.AnalyticsFragment"
+                    tools:layout="@layout/fragment_analytics"/>
             </LinearLayout>
 
         </ScrollView>

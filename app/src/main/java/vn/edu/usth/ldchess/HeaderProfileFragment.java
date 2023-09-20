@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link KinghtFragment#newInstance} factory method to
+ * Use the {@link HeaderProfileFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class KinghtFragment extends Fragment {
+public class HeaderProfileFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class KinghtFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public KinghtFragment() {
+    public HeaderProfileFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +34,11 @@ public class KinghtFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment KinghtFragment.
+     * @return A new instance of fragment HeaderProfileFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static KinghtFragment newInstance(String param1, String param2) {
-        KinghtFragment fragment = new KinghtFragment();
+    public static HeaderProfileFragment newInstance(String param1, String param2) {
+        HeaderProfileFragment fragment = new HeaderProfileFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +59,6 @@ public class KinghtFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_kinght, container, false);
+        return inflater.inflate(R.layout.fragment_header_profile, container, false);
     }
 }

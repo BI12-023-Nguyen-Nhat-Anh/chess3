@@ -3,19 +3,17 @@ package vn.edu.usth.ldchess;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link QueenFragment#newInstance} factory method to
+ * Use the {@link CoursesFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class QueenFragment extends Fragment {
+public class CoursesFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +24,7 @@ public class QueenFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public QueenFragment() {
+    public CoursesFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +34,11 @@ public class QueenFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment QueenFragment.
+     * @return A new instance of fragment CoursesFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static QueenFragment newInstance(String param1, String param2) {
-        QueenFragment fragment = new QueenFragment();
+    public static CoursesFragment newInstance(String param1, String param2) {
+        CoursesFragment fragment = new CoursesFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,30 +59,6 @@ public class QueenFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootview = inflater.inflate(R.layout.fragment_queen, container, false);
-
-        RelativeLayout next=rootview.findViewById(R.id.next);
-        RelativeLayout back=rootview.findViewById(R.id.previous);
-
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                BishopFragment bishop=new BishopFragment();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, bishop, "bishop")
-                        .addToBackStack(null).commit();
-            }
-        });
-
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                KingFragment king=new KingFragment();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, king, "king")
-                        .addToBackStack(null).commit();
-            }
-        });
-        return rootview;
+        return inflater.inflate(R.layout.fragment_courses, container, false);
     }
 }
