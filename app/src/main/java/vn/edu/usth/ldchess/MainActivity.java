@@ -39,13 +39,16 @@ public class MainActivity extends AppCompatActivity {
                         nav_bottom.setSelectedItemId(R.id.home);
                         break;
                     case 1:
-                        nav_bottom.setSelectedItemId(R.id.lesson);
+                        nav_bottom.setSelectedItemId(R.id.explore);
                         break;
                     case 2:
+                        nav_bottom.setSelectedItemId(R.id.lesson);
+                        break;
+                    case 3:
                         nav_bottom.setSelectedItemId(R.id.profile);
                         break;
                 }
-                super.onPageSelected(position);
+
             }
         });
         nav_bottom.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -54,15 +57,19 @@ public class MainActivity extends AppCompatActivity {
                 int itemId = item.getItemId();//                    case R.id.home_nav:
 //                        getSupportFragmentManager().beginTransaction().replace(R.id.home_nav);
 //                        break;
-                if (itemId == R.id.lesson) {
+                if (itemId == R.id.explore) {
                     viewpager.setCurrentItem(1);
                     return true;
-                } else if (itemId == R.id.profile) {
+                } else if (itemId == R.id.lesson) {
                     viewpager.setCurrentItem(2);
                     return true;
                 }
                 else if (itemId == R.id.home) {
                     viewpager.setCurrentItem(0);
+                    return true;
+                }
+                else if (itemId == R.id.profile) {
+                    viewpager.setCurrentItem(3);
                     return true;
                 }
 

@@ -5,8 +5,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import vn.edu.usth.ldchess.Intro;
-import vn.edu.usth.ldchess.List_Lesson;
+import vn.edu.usth.ldchess.Lesson_0;
+import vn.edu.usth.ldchess.Nanh_detailFragment;
+import vn.edu.usth.ldchess.exploreFragment;
 import vn.edu.usth.ldchess.home_Fragment;
 
 public class AdapterView extends FragmentStateAdapter {
@@ -21,9 +22,11 @@ public class AdapterView extends FragmentStateAdapter {
             case 0:
                 return new home_Fragment();
             case 1:
-                return new Intro();
+                return new exploreFragment();
             case 2:
-                return new List_Lesson();
+                return new Lesson_0();
+            case 3:
+                return new Nanh_detailFragment();
         }
         return null;
     }
@@ -31,6 +34,6 @@ public class AdapterView extends FragmentStateAdapter {
     @Override
     public int getItemCount() {
 
-        return 3;
+        return 4;
     }
 }
