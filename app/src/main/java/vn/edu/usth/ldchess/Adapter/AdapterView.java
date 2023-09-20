@@ -5,9 +5,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import vn.edu.usth.ldchess.HeaderProfileFragment;
 import vn.edu.usth.ldchess.Lesson_0;
 import vn.edu.usth.ldchess.exploreFragment;
-import vn.edu.usth.ldchess.header_profileFragment;
 import vn.edu.usth.ldchess.home_Fragment;
 
 public class AdapterView extends FragmentStateAdapter {
@@ -26,7 +26,7 @@ public class AdapterView extends FragmentStateAdapter {
             case 2:
                 return new Lesson_0();
             case 3:
-                return new header_profileFragment();
+                return new HeaderProfileFragment();
         }
         return null;
     }
