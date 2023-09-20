@@ -1,19 +1,18 @@
 package vn.edu.usth.ldchess;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Learn#newInstance} factory method to
+ * Use the {@link Content2#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Learn extends Fragment {
+public class Content2 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +23,7 @@ public class Learn extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Learn() {
+    public Content2() {
         // Required empty public constructor
     }
 
@@ -34,11 +33,11 @@ public class Learn extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Learn.
+     * @return A new instance of fragment Content2.
      */
     // TODO: Rename and change types and number of parameters
-    public static Learn newInstance(String param1, String param2) {
-        Learn fragment = new Learn();
+    public static Content2 newInstance(String param1, String param2) {
+        Content2 fragment = new Content2();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +58,6 @@ public class Learn extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_learn, container, false);
+        return inflater.inflate(R.layout.fragment_content2, container, false);
     }
 }
