@@ -8,12 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-public class pawnActivity extends AppCompatActivity {
+public class kingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pawn);
+        setContentView(R.layout.activity_king);
 
         RelativeLayout next=findViewById(R.id.next);
         RelativeLayout back=findViewById(R.id.previous);
@@ -21,11 +21,11 @@ public class pawnActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                KnightFragment knight=new KnightFragment();
+//                QueenFragment queen=new QueenFragment();
 //                FragmentManager fragmentManager=getSupportFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.main, knight, "knight")
+//                fragmentManager.beginTransaction().replace(R.id.main, queen, "queen")
 //                        .addToBackStack(null).commit();
-                Intent intent = new Intent(pawnActivity.this, knightActivity.class);
+                Intent intent = new Intent(kingActivity.this, queenActivity.class);
                 startActivity(intent);
             }
         });
@@ -33,12 +33,14 @@ public class pawnActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                CastleFragment rock=new CastleFragment();
+//                KnightFragment knight=new KnightFragment();
 //                FragmentManager fragmentManager=getSupportFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.main, rock, "Rock")
+//                fragmentManager.popBackStackImmediate();
+//                fragmentManager.beginTransaction().replace(R.id.main, knight, "knight")
 //                        .addToBackStack(null).commit();
-                Intent intent = new Intent(pawnActivity.this, castleActivity.class);
+                Intent intent = new Intent(kingActivity.this, knightActivity.class);
                 startActivity(intent);
+
             }
         });
     }

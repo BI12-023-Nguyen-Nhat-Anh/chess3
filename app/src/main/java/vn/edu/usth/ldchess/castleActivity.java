@@ -8,36 +8,36 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-public class pawnActivity extends AppCompatActivity {
+public class castleActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pawn);
+        setContentView(R.layout.activity_castle);
 
         RelativeLayout next=findViewById(R.id.next);
         RelativeLayout back=findViewById(R.id.previous);
 
         next.setOnClickListener(new View.OnClickListener() {
-            @Override
+
             public void onClick(View view) {
-//                KnightFragment knight=new KnightFragment();
+//                PawnFragment pawn=new PawnFragment();
 //                FragmentManager fragmentManager=getSupportFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.main, knight, "knight")
+//                fragmentManager.beginTransaction().replace(R.id.main, pawn, "Pawn")
 //                        .addToBackStack(null).commit();
-                Intent intent = new Intent(pawnActivity.this, knightActivity.class);
+                Intent intent = new Intent(castleActivity.this, pawnActivity.class);
                 startActivity(intent);
             }
         });
 
         back.setOnClickListener(new View.OnClickListener() {
-            @Override
+
             public void onClick(View view) {
-//                CastleFragment rock=new CastleFragment();
-//                FragmentManager fragmentManager=getSupportFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.main, rock, "Rock")
+//                BishopFragment bishop=new BishopFragment();
+//                FragmentManager fragmentManager= getSupportFragmentManager();
+//                fragmentManager.beginTransaction().replace(R.id.main, bishop, "Bishop")
 //                        .addToBackStack(null).commit();
-                Intent intent = new Intent(pawnActivity.this, castleActivity.class);
+                Intent intent = new Intent(castleActivity.this, bishopActivity.class);
                 startActivity(intent);
             }
         });
