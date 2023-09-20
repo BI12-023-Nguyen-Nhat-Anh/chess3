@@ -3,10 +3,12 @@ package vn.edu.usth.ldchess;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,7 +16,6 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class KingFragment extends Fragment {
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -23,6 +24,7 @@ public class KingFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
 
     public KingFragment() {
         // Required empty public constructor
@@ -59,6 +61,31 @@ public class KingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_king, container, false);
+        View rootview = inflater.inflate(R.layout.fragment_king, container,false);
+        RelativeLayout next=rootview.findViewById(R.id.next);
+        RelativeLayout back=rootview.findViewById(R.id.previous);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                QueenFragment queen=new QueenFragment();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, queen, "queen")
+                        .addToBackStack(null).commit();
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                KnightFragment knight=new KnightFragment();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.popBackStackImmediate();
+                fragmentManager.beginTransaction().replace(R.id.main, knight, "knight")
+                        .addToBackStack(null).commit();
+
+            }
+        });
+        return rootview;
     }
 }

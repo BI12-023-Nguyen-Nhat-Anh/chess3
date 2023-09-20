@@ -3,10 +3,12 @@ package vn.edu.usth.ldchess;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +61,30 @@ public class BishopFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bishop, container, false);
+        View rootview=inflater.inflate(R.layout.fragment_bishop, container, false);
+        RelativeLayout next=rootview.findViewById(R.id.next);
+        RelativeLayout back=rootview.findViewById(R.id.previous);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CastleFragment rock=new CastleFragment();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, rock, "Rock")
+                        .addToBackStack(null).commit();
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                QueenFragment queen = new QueenFragment();
+                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.main, queen, "Queen")
+                        .addToBackStack(null).commit();
+            }
+        });
+        return rootview;
     }
 }

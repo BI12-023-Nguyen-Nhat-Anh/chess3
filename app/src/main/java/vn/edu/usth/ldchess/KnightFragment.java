@@ -3,17 +3,19 @@ package vn.edu.usth.ldchess;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Nanh_detailFragment#newInstance} factory method to
+ * Use the {@link KnightFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Nanh_detailFragment extends Fragment {
+public class KnightFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class Nanh_detailFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Nanh_detailFragment() {
+    public KnightFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class Nanh_detailFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Nanh_detailFragment.
+     * @return A new instance of fragment KnightFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static Nanh_detailFragment newInstance(String param1, String param2) {
-        Nanh_detailFragment fragment = new Nanh_detailFragment();
+    public static KnightFragment newInstance(String param1, String param2) {
+        KnightFragment fragment = new KnightFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,29 @@ public class Nanh_detailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nanh_detail, container, false);
+        View rootview=inflater.inflate(R.layout.fragment_knight, container, false);
+        RelativeLayout next=rootview.findViewById(R.id.next);
+        RelativeLayout back=rootview.findViewById(R.id.previous);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                KingFragment king=new KingFragment();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, king, "King")
+                        .addToBackStack(null).commit();
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PawnFragment pawn=new PawnFragment();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, pawn, "Pawn")
+                        .addToBackStack(null).commit();
+            }
+        });
+        return rootview;
     }
 }

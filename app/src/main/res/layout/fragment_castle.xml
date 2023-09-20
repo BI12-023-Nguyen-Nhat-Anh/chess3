@@ -20,45 +20,46 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/previous">
+                    android:id="@+id/previous"
+                    android:layout_marginLeft="-50dp">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/previous"
                         android:layout_centerInParent="true"/>
                     <ImageView
-                        android:layout_width="wrap_content"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="-100dp"
                         android:src="@drawable/bishop_unactive"/>
                 </RelativeLayout>
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/rock"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"/>
 
                 <RelativeLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/next">
+                    android:id="@+id/next"
+                    android:layout_marginRight="-50dp">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/next"
                         android:layout_centerInParent="true"/>
                     <ImageView
-                        android:layout_width="wrap_content"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/pawn_unactive"
-                        android:layout_marginRight="-100dp"/>
+                        android:src="@drawable/pawn_unactive"/>
                 </RelativeLayout>
             </LinearLayout>
 
@@ -104,7 +105,7 @@
                             android:layout_height="wrap_content"
                             android:text="Courses for you"
                             android:textColor="@color/white"
-                            android:textSize="35dp"/>
+                            android:textSize="20dp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -112,30 +113,46 @@
                             android:textColor="#8a8c91"/>
                     </LinearLayout>
 
-                    <ImageView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:src="@drawable/see_all"
-                        android:layout_gravity="center"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="end">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/white_button"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="5dp"
+                            android:text="See All"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout
+                <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="45dp"
-                    android:layout_marginBottom="70dp">
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="150dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/course_border"/>
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/course_border"/>
-                </LinearLayout>
+                    android:paddingRight="25dp">
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="70dp">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/course_background" />
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/course_background" />
+                    </LinearLayout>
+                </HorizontalScrollView>
 
             </LinearLayout>
 
