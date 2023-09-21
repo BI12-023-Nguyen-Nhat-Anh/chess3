@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CastleFragment"
+    tools:context=".QueenFragment"
     android:scrollbars="vertical"
     android:background="#151a22">
 
@@ -36,7 +36,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="-100dp"
-                        android:src="@drawable/bishop_unactive"/>
+                        android:src="@drawable/king_unactive"/>
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -53,7 +53,7 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/rock" />
+                        android:src="@drawable/queen" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -69,7 +69,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="-100dp"
-                        android:src="@drawable/pawn_unactive"/>
+                        android:src="@drawable/bishop_unactive"/>
                 </RelativeLayout>
             </LinearLayout>
 
@@ -88,15 +88,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="20dp"
-                        android:text="About the Rock"
+                        android:text="About the Queen"
                         android:textColor="@color/white"
                         android:textSize="35dp" />
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="The rook is an important piece in the game of chess. It is represented by a vehicle with the ability to move along horizontal and vertical lines on the chessboard.\n\nWith the ability to move far and without restrictions on the path, the vehicle can pass through empty squares. and other chess pieces in the same row or column. It can move from one end of the board to another in one go.\n\nThe rook's strength lies in its ability to attack and defend in rows and columns. The rook can pose a great threat on the board and can attack many enemy pieces at once. It can also be used to protect the king and create a strong defensive barrier.\n\nIn chess strategy, the use of the rook plays an important role. Using rooks to control rows and columns, attack opposing pieces and create strategic paths is an important element in the match."
+                        android:text="The queen is the most important piece in the game of chess. It is represented by a queen with the ability to move strongly and flexibly on the chessboard. The queen can move horizontally, vertically and diagonally to all squares on the board.\n\nWith the ability to move freely in many directions, the queen becomes a very powerful piece. It can attack and checkmate from afar, and can protect and support other pieces in the match. The queen can move through multiple rows and columns, creating wide attack paths and putting strong pressure on opponents.\n\nThe queen's variety and strength make it an important target in fight. If a player loses the queen, this usually means losing an important piece and losing a large part of their strength and ability to attack."
                         android:textColor="@color/white" />
                 </LinearLayout>
 

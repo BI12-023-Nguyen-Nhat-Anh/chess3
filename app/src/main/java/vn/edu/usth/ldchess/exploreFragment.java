@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
@@ -69,13 +70,17 @@ public class exploreFragment extends Fragment {
         chess_intro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), Chess_List.class));
+                List_Chess list_chess=new List_Chess();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, list_chess, "queen")
+                        .commit();
             }
         });
         chess_lesson.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), Lesson_List.class));
+
             }
         });
 

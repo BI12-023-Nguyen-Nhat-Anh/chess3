@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pawnActivity"
+    tools:context=".PawnFragment"
     android:scrollbars="vertical"
     android:background="#151a22">
 
@@ -25,7 +25,7 @@
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="280dp"
                     android:id="@+id/previous">
                     <ImageView
                         android:layout_width="wrap_content"
@@ -36,19 +36,31 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="-100dp"
-                        android:src="@drawable/rock_unactive"/>
+                        android:src="@drawable/rock_unactive"
+                        />
                 </RelativeLayout>
 
-                <ImageView
+                <RelativeLayout
+                    android:id="@+id/icon_pawn"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pawn"
+                    android:layout_height="280dp"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginRight="20dp">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="280dp"
+                        android:src="@drawable/border_radius_for_logo_active"/>
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/pawn" />
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="280dp"
                     android:id="@+id/next">
                     <ImageView
                         android:layout_width="wrap_content"
@@ -56,10 +68,12 @@
                         android:src="@drawable/next"
                         android:layout_centerInParent="true"/>
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/knight_unactive"
-                        android:layout_marginRight="-100dp"/>
+                        android:layout_width="500dp"
+                        android:layout_height="500dp"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/knight_unactive"/>
                 </RelativeLayout>
             </LinearLayout>
 
@@ -104,7 +118,7 @@
                             android:layout_height="wrap_content"
                             android:text="Courses for you"
                             android:textColor="@color/white"
-                            android:textSize="35dp"/>
+                            android:textSize="20dp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -112,30 +126,46 @@
                             android:textColor="#8a8c91"/>
                     </LinearLayout>
 
-                    <ImageView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:src="@drawable/see_all"
-                        android:layout_gravity="center"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="end">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/white_button"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="5dp"
+                            android:text="See All"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout
+                <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="45dp"
-                    android:layout_marginBottom="70dp">
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="150dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/course_border"/>
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="150dp"
-                        android:src="@drawable/course_border"/>
-                </LinearLayout>
+                    android:paddingRight="25dp">
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="70dp">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/course_background" />
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/course_background" />
+                    </LinearLayout>
+                </HorizontalScrollView>
 
             </LinearLayout>
 

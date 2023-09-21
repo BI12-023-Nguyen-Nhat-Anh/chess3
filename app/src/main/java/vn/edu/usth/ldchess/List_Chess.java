@@ -1,12 +1,16 @@
 package vn.edu.usth.ldchess;
 
+import android.media.Image;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +63,19 @@ public class List_Chess extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list_chess, container, false);
+        View rootview = inflater.inflate(R.layout.fragment_list_chess, container,false);
+        ImageView next=rootview.findViewById(R.id.pawnbutton);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PawnFragment queen=new PawnFragment();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, queen, "Pawn")
+                        .addToBackStack(null).commit();
+            }
+        });
+
+        return rootview;
     }
 }

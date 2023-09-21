@@ -72,7 +72,7 @@ public class QueenFragment extends Fragment {
                 BishopFragment bishop=new BishopFragment();
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, bishop, "bishop")
-                        .addToBackStack(null).commit();
+                        .commit();
             }
         });
 
@@ -82,7 +82,7 @@ public class QueenFragment extends Fragment {
                 KingFragment king=new KingFragment();
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, king, "king")
-                        .addToBackStack(null).commit();
+                        .commit();
             }
         });
         return rootview;
