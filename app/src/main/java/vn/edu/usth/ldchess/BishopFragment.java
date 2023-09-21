@@ -71,7 +71,7 @@ public class BishopFragment extends Fragment {
                 CastleFragment rock=new CastleFragment();
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, rock, "Rock")
-                        .addToBackStack(null).commit();
+                        .commit();
             }
         });
 
@@ -82,9 +82,14 @@ public class BishopFragment extends Fragment {
                 FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction()
                         .replace(R.id.main, queen, "Queen")
-                        .addToBackStack(null).commit();
+                        .commit();
             }
         });
         return rootview;
+    }
+    public void onBackPressed() {
+        List_Chess list_chess = new List_Chess();
+        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.main, list_chess, "List Chess").commit();
     }
 }

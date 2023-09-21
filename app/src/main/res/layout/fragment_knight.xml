@@ -26,7 +26,7 @@
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="280dp"
                     android:id="@+id/previous">
                     <ImageView
                         android:layout_width="wrap_content"
@@ -37,29 +37,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="-100dp"
-                        android:src="@drawable/knight_unactive"/>
+                        android:src="@drawable/pawn_unactive"/>
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="280dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp">
                     <ImageView
-                        android:layout_width="190dp"
-                        android:layout_height="325dp"
+                        android:layout_width="160dp"
+                        android:layout_height="280dp"
                         android:src="@drawable/border_radius_for_logo_active"/>
 
                     <ImageView
-                        android:layout_width="180dp"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/knight"
-                        android:layout_centerInParent="true"/>
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/knight" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="280dp"
                     android:id="@+id/next">
                     <ImageView
                         android:layout_width="wrap_content"
@@ -69,8 +69,8 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/queen_unactive"
-                        android:layout_marginRight="-100dp"/>
+                        android:layout_marginRight="-100dp"
+                        android:src="@drawable/king_unactive"/>
                 </RelativeLayout>
             </LinearLayout>
 

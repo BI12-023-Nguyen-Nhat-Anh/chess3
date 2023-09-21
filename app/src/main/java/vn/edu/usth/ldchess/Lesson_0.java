@@ -1,5 +1,6 @@
 package vn.edu.usth.ldchess;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -61,4 +62,8 @@ public class Lesson_0 extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_lesson_0, container, false);
     }
+    public void onBackPressed() {
+        startActivity(new Intent(getActivity(), MainActivity.class));
+    }
+
 }

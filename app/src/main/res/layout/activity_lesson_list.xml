@@ -116,6 +116,7 @@
 
 
                 <ImageView
+                    android:id="@+id/lesson_one"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
@@ -163,6 +164,7 @@
                 android:layout_marginBottom="27dp">
 
                 <ImageView
+                    android:id="@+id/lesson_two"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
@@ -211,6 +213,7 @@
                 android:layout_marginBottom="27dp">
 
                 <ImageView
+                    android:id="@+id/lesson_three"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
@@ -259,6 +262,7 @@
                 android:layout_marginBottom="27dp">
 
                 <ImageView
+                    android:id="@+id/lesson_four"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
@@ -307,6 +311,7 @@
                 android:layout_marginBottom="27dp">
 
                 <ImageView
+                    android:id="@+id/lesson_five"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"

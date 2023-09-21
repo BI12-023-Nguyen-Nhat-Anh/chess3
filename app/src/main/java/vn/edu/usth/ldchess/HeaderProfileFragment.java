@@ -1,12 +1,19 @@
 package vn.edu.usth.ldchess;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.google.android.material.tabs.TabLayout;
+
+import vn.edu.usth.ldchess.Adapter.AdapterProfile;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +66,44 @@ public class HeaderProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_header_profile, container, false);
+        View view =  inflater.inflate(R.layout.fragment_header_profile, container, false);
+        TabLayout tabLayout = view.findViewById(R.id.tab_layout);
+        ViewPager2 viewPager2 = view.findViewById(R.id.viewpager);
+
+        tabLayout.addTab(tabLayout.newTab().setText("Analytic"));
+        tabLayout.addTab(tabLayout.newTab().setText("Save"));
+        tabLayout.addTab(tabLayout.newTab().setText("Courses"));
+
+        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+        AdapterProfile adapterProfile = new AdapterProfile(fragmentManager, getLifecycle());
+        viewPager2.setAdapter(adapterProfile);
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager2.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                tabLayout.selectTab(tabLayout.getTabAt(position));
+            }
+        });
+        return view;
+    }
+
+    public void onBackPressed() {
+        startActivity(new Intent(getActivity(), MainActivity.class));
     }
 }

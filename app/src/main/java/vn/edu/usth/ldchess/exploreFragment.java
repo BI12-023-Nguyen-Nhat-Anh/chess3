@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +19,7 @@ import android.widget.ImageView;
  * create an instance of this fragment.
  */
 public class exploreFragment extends Fragment {
-
+    private static final String TAG="Main Activity";
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -69,16 +71,30 @@ public class exploreFragment extends Fragment {
         chess_intro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), Chess_List.class));
+                List_Chess list_chess=new List_Chess();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, list_chess, "List Chess")
+                        .addToBackStack(null).commit();
             }
         });
         chess_lesson.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), Lesson_List.class));
+                List_Lesson list_lesson=new List_Lesson();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, list_lesson, "List Lesson")
+                        .addToBackStack(null).commit();
             }
         });
 
         return view;
     }
+
+//    private void backtoHome(){
+//        home_Fragment home = new home_Fragment();
+//        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+//        fragmentManager.beginTransaction().replace(R.id.main, home, "Home").commit();
+//    }
+
+
 }

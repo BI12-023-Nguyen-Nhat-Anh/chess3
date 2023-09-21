@@ -3,10 +3,12 @@ package vn.edu.usth.ldchess;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +61,72 @@ public class List_Lesson extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list__lesson, container, false);
+        View view = inflater.inflate(R.layout.fragment_list__lesson, container, false);
+        ImageView history = view.findViewById(R.id.history);
+        ImageView lesson_one = view.findViewById(R.id.lesson_one);
+        ImageView lesson_two = view.findViewById(R.id.lesson_two);
+        ImageView lesson_three = view.findViewById(R.id.lesson_three);
+        ImageView lesson_four = view.findViewById(R.id.lesson_four);
+        ImageView lesson_five = view.findViewById(R.id.lesson_five);
+        history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Header_Navbar_Lesson1 history=new Header_Navbar_Lesson1();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, history, "History of chess")
+                        .addToBackStack(null).commit();
+            }
+        });
+
+        lesson_one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Header_Navbar_Lesson2 lesson1=new Header_Navbar_Lesson2();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, lesson1, "Lesson 1")
+                        .addToBackStack(null).commit();
+            }
+        });
+
+        lesson_two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Header_Navbar_Lesson3 lesson2=new Header_Navbar_Lesson3();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, lesson2, "Lesson 2")
+                        .addToBackStack(null).commit();
+            }
+        });
+
+        lesson_three.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Header_Navbar_Lesson4 lesson3=new Header_Navbar_Lesson4();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, lesson3, "Lesson 3")
+                        .addToBackStack(null).commit();
+            }
+        });
+
+        lesson_four.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Header_Navbar_Lesson5 lesson4=new Header_Navbar_Lesson5();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, lesson4, "Lesson 4")
+                        .addToBackStack(null).commit();
+            }
+        });
+
+        lesson_five.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Header_Navbar_Lesson6 lesson5=new Header_Navbar_Lesson6();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, lesson5, "Lesson 5")
+                        .addToBackStack(null).commit();
+            }
+        });
+        return  view;
     }
 }

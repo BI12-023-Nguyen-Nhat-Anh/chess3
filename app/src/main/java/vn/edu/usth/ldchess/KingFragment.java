@@ -71,7 +71,7 @@ public class KingFragment extends Fragment {
                 QueenFragment queen=new QueenFragment();
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, queen, "queen")
-                        .addToBackStack(null).commit();
+                        .commit();
             }
         });
 
@@ -82,10 +82,16 @@ public class KingFragment extends Fragment {
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.popBackStackImmediate();
                 fragmentManager.beginTransaction().replace(R.id.main, knight, "knight")
-                        .addToBackStack(null).commit();
+                        .commit();
 
             }
         });
         return rootview;
+    }
+
+    public void onBackPressed() {
+        List_Chess list_chess = new List_Chess();
+        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.main, list_chess, "List Chess").commit();
     }
 }
