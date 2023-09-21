@@ -88,4 +88,10 @@ public class KingFragment extends Fragment {
         });
         return rootview;
     }
+
+    public void onBackPressed() {
+        List_Chess list_chess = new List_Chess();
+        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.main, list_chess, "List Chess").commit();
+    }
 }

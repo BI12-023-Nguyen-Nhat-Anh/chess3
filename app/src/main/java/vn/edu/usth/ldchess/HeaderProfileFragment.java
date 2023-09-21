@@ -1,5 +1,6 @@
 package vn.edu.usth.ldchess;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -100,5 +101,9 @@ public class HeaderProfileFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    public void onBackPressed() {
+        startActivity(new Intent(getActivity(), MainActivity.class));
     }
 }

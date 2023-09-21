@@ -1,8 +1,9 @@
 package vn.edu.usth.ldchess;
 
-import android.media.Image;
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.customview.widget.ExploreByTouchHelper;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
@@ -10,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -64,18 +64,76 @@ public class List_Chess extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootview = inflater.inflate(R.layout.fragment_list_chess, container,false);
-        ImageView next=rootview.findViewById(R.id.pawnbutton);
+        ImageView pawn=rootview.findViewById(R.id.pawnbutton);
+        ImageView knight=rootview.findViewById(R.id.knightbutton);
+        ImageView bishop=rootview.findViewById(R.id.bishopbutton);
+        ImageView king=rootview.findViewById(R.id.kingbutton);
+        ImageView queen=rootview.findViewById(R.id.queenbutton);
+        ImageView rock=rootview.findViewById(R.id.rookbutton);
 
-        next.setOnClickListener(new View.OnClickListener() {
+
+        pawn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PawnFragment queen=new PawnFragment();
+                PawnFragment pawn=new PawnFragment();
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, queen, "Pawn")
-                        .addToBackStack(null).commit();
+                fragmentManager.beginTransaction().replace(R.id.main, pawn, "Pawn")
+                        .commit();
             }
         });
 
+        knight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                KnightFragment knight=new KnightFragment();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, knight, "Knight")
+                        .commit();
+            }
+        });
+
+        king.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                KingFragment king=new KingFragment();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, king, "King")
+                        .commit();
+            }
+        });
+
+        queen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                QueenFragment queen=new QueenFragment();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, queen, "Queen")
+                        .commit();
+            }
+        });
+
+        bishop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BishopFragment bishop=new BishopFragment();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, bishop, "Bishop")
+                        .commit();
+            }
+        });
+
+        rock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CastleFragment rock=new CastleFragment();
+                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.main, rock, "Rock")
+                        .commit();
+            }
+        });
         return rootview;
+    }
+    public void onBackPressed() {
+        startActivity(new Intent(getActivity(), MainActivity.class));
     }
 }

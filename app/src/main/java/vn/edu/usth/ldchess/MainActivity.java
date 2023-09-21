@@ -2,6 +2,7 @@ package vn.edu.usth.ldchess;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -36,16 +37,24 @@ public class MainActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 switch (position){
                     case 0:
-                        nav_bottom.setSelectedItemId(R.id.home);
+                        home_Fragment home = new home_Fragment();
+                        FragmentManager fragmentHome = getSupportFragmentManager();
+                        fragmentHome.beginTransaction().replace(R.id.main, home, "Home").commit();
                         break;
                     case 1:
-                        nav_bottom.setSelectedItemId(R.id.explore);
+                        List_Chess list_chess = new List_Chess();
+                        FragmentManager fragmentExplore = getSupportFragmentManager();
+                        fragmentExplore.beginTransaction().replace(R.id.main, list_chess, "List chess").commit();
                         break;
                     case 2:
-                        nav_bottom.setSelectedItemId(R.id.lesson);
+                        Lesson_0 lesson = new Lesson_0();
+                        FragmentManager fragmentLesson = getSupportFragmentManager();
+                        fragmentLesson.beginTransaction().replace(R.id.main, lesson, "Lesson").commit();
                         break;
                     case 3:
-                        nav_bottom.setSelectedItemId(R.id.profile);
+                        HeaderProfileFragment profile = new HeaderProfileFragment();
+                        FragmentManager fragmentProfile = getSupportFragmentManager();
+                        fragmentProfile.beginTransaction().replace(R.id.main, profile, "Profile").commit();
                         break;
                 }
 
@@ -104,6 +113,55 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        Log.i(TAG, "onStart: This is a log message.");
+        Log.i(TAG, "onStop: This is a log message.");
+    }
+
+    @Override
+    public void onBackPressed() {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        Fragment currentFragment = fragmentManager.findFragmentById(R.id.main);
+        if (currentFragment instanceof List_Chess) {
+            List_Chess list_chess = (List_Chess) currentFragment;
+            list_chess.onBackPressed();
+        }
+        else if(currentFragment instanceof Lesson_0){
+            Lesson_0 lesson = (Lesson_0) currentFragment;
+            lesson.onBackPressed();
+        }
+        else if(currentFragment instanceof HeaderProfileFragment){
+            HeaderProfileFragment profile = (HeaderProfileFragment) currentFragment;
+            profile.onBackPressed();
+        }
+        else if(currentFragment instanceof List_Chess){
+            List_Chess list_chess = (List_Chess) currentFragment;
+            list_chess.onBackPressed();
+        }
+        else if(currentFragment instanceof PawnFragment){
+            PawnFragment pawn = (PawnFragment) currentFragment;
+            pawn.onBackPressed();
+        }
+        else if(currentFragment instanceof KingFragment){
+            KingFragment king = (KingFragment) currentFragment;
+            king.onBackPressed();
+        }
+        else if(currentFragment instanceof QueenFragment){
+            QueenFragment queen = (QueenFragment) currentFragment;
+            queen.onBackPressed();
+        }
+        else if(currentFragment instanceof BishopFragment){
+            BishopFragment bihsop = (BishopFragment) currentFragment;
+            bihsop.onBackPressed();
+        }
+        else if(currentFragment instanceof KnightFragment){
+            KnightFragment knight = (KnightFragment) currentFragment;
+            knight.onBackPressed();
+        }
+        else if(currentFragment instanceof CastleFragment){
+            CastleFragment rock = (CastleFragment) currentFragment;
+            rock.onBackPressed();
+        }
+        else {
+            super.onBackPressed();
+        }
     }
 }
