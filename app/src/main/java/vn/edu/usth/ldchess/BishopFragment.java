@@ -71,7 +71,7 @@ public class BishopFragment extends Fragment {
                 CastleFragment rock=new CastleFragment();
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, rock, "Rock")
-                        .addToBackStack(null).commit();
+                        .commit();
             }
         });
 
@@ -82,7 +82,7 @@ public class BishopFragment extends Fragment {
                 FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction()
                         .replace(R.id.main, queen, "Queen")
-                        .addToBackStack(null).commit();
+                        .commit();
             }
         });
         return rootview;

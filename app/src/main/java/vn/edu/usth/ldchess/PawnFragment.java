@@ -71,7 +71,7 @@ public class PawnFragment extends Fragment {
                 KnightFragment knight=new KnightFragment();
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, knight, "knight")
-                        .addToBackStack(null).commit();
+                        .commit();
             }
         });
 
@@ -81,7 +81,7 @@ public class PawnFragment extends Fragment {
                 CastleFragment rock=new CastleFragment();
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, rock, "Rock")
-                        .addToBackStack(null).commit();
+                        .commit();
             }
         });
         return rootview;
