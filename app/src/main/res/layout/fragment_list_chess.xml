@@ -6,158 +6,417 @@
     android:background="#000000"
     tools:context=".List_Chess">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_blank_fragment"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
         android:orientation="vertical">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="10dp">
-                <ImageView
-                    android:id="@+id/pawnbutton"
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:src="@drawable/shape_chess"
-                    android:layout_weight="1"
-                    />
+            android:id="@+id/header"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
 
-                <ImageView
+                <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="230dp"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/pawn">
+                    android:layout_height="wrap_content"
+                    android:text="Our Lesson"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/dmsans_variablefont_opsz">
 
-                </ImageView>
-            </RelativeLayout>
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In-demand chess courses."
+                    android:textSize="16sp"
+                    android:textColor="#80FFFFFF"
+                    android:fontFamily="@font/dmsans_variablefont_opsz">
+
+                </TextView>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/light"
+
+                >
+
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="10dp">
+                android:layout_marginRight="10dp"
+                android:id="@+id/pawnbutton"
+                >
                 <ImageView
-                    android:id="@+id/knightbutton"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:src="@drawable/shape_chess"
-                    android:layout_weight="1"
-                    />
+                    android:background="@drawable/shape_chess">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pawnnn"
+                    android:padding="10dp">
+
+                </ImageView>
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="118dp"
+                    android:layout_height="223dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/knight"
-                    >
+                    android:background="@drawable/tot">
 
                 </ImageView>
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/knightbutton"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/shape_chess">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/knighttt"
+                    android:padding="10dp">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="118dp"
+                    android:layout_height="223dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ma">
+
+                </ImageView>
+            </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="10dp">
+
+                android:id="@+id/bishopbutton"
+                android:layout_marginRight="10dp"
+                >
                 <ImageView
-                    android:id="@+id/bishopbutton"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:src="@drawable/shape_chess"
-                    android:layout_weight="1"
-                    />
+                    android:background="@drawable/shape_chess">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bishoppp"
+                    android:padding="10dp">
+
+                </ImageView>
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="118dp"
+                    android:layout_height="223dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/bishop">
+                    android:background="@drawable/tuong">
 
                 </ImageView>
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="10dp">
+
+                android:id="@+id/rookbutton"
+                android:layout_marginLeft="10dp"
+                >
                 <ImageView
-                    android:id="@+id/rookbutton"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:src="@drawable/shape_chess"
-                    android:layout_weight="1"
-                    />
+                    android:background="@drawable/shape_chess">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rookkk"
+                    android:padding="10dp">
+
+                </ImageView>
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="250dp"
+                    android:layout_width="118dp"
+                    android:layout_height="223dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/rock">
+                    android:background="@drawable/xe">
 
                 </ImageView>
             </RelativeLayout>
-
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="10dp">
+                android:layout_marginRight="10dp"
+                android:id="@+id/queenbutton"
+                >
                 <ImageView
-                    android:id="@+id/queenbutton"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:src="@drawable/shape_chess"
-                    android:layout_weight="1"
-                    />
+                    android:background="@drawable/shape_chess">
+
+                </ImageView>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/queen"
-                    android:layout_centerInParent="true">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/queennn"
+                    android:padding="10dp">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="118dp"
+                    android:layout_height="223dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/hau">
 
                 </ImageView>
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="10dp">
+
+                android:id="@+id/kingbutton"
+                android:layout_marginLeft="10dp"
+                >
                 <ImageView
-                    android:id="@+id/kingbutton"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:src="@drawable/shape_chess"
-                    android:layout_weight="1"
-                    />
+                    android:background="@drawable/shape_chess">
+
+                </ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/kinggg"
+                    android:padding="10dp">
+
+                </ImageView>
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="250dp"
-                    android:src="@drawable/king">
+                    android:layout_width="118dp"
+                    android:layout_height="223dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/vua">
 
                 </ImageView>
             </RelativeLayout>
-
         </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="10dp">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/pawnbutton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:src="@drawable/shape_chess"-->
+<!--                    android:layout_weight="1"-->
+<!--                    />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/pawn">-->
+
+<!--                </ImageView>-->
+<!--            </RelativeLayout>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="10dp">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/knightbutton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:src="@drawable/shape_chess"-->
+<!--                    android:layout_weight="1"-->
+<!--                    />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/knight">-->
+
+<!--                </ImageView>-->
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="10dp">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/bishopbutton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:src="@drawable/shape_chess"-->
+<!--                    android:layout_weight="1"-->
+<!--                    />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/bishop">-->
+
+<!--                </ImageView>-->
+<!--            </RelativeLayout>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="10dp">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/rookbutton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:src="@drawable/shape_chess"-->
+<!--                    android:layout_weight="1"-->
+<!--                    />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="250dp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/rock">-->
+
+<!--                </ImageView>-->
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="10dp">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/queenbutton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:src="@drawable/shape_chess"-->
+<!--                    android:layout_weight="1"-->
+<!--                    />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/queen"-->
+<!--                    android:layout_centerInParent="true">-->
+
+<!--                </ImageView>-->
+<!--            </RelativeLayout>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="10dp">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/kingbutton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:src="@drawable/shape_chess"-->
+<!--                    android:layout_weight="1"-->
+<!--                    />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="250dp"-->
+<!--                    android:src="@drawable/king">-->
+
+<!--                </ImageView>-->
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
 
 
 
