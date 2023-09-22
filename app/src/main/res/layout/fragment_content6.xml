@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hòa pat"
+                android:text="Lesson 5: Draw by stalemate."
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"
@@ -33,18 +33,17 @@
                 android:id="@+id/text_view6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hòa pat là một thuật ngữ trong cờ vua và nghĩa là một trạng thái trong trận đấu khi Vua không bị chiếu mà không còn bước đi hợp lệ nào khả dĩ cho bất kỳ quân cờ nào. Trong tình huống này, trận đấu kết thúc với một kết quả hòa.
+                android:text="Draw by stalemate is a term in chess that refers to a situation in a game where the King is not in check but has no legal moves available for any of the pieces. In this scenario, the game ends with a draw.
 \n
 \n
-Tình huống hòa pat thường xảy ra khi:
+Stalemate typically occurs when:
+\n
+- The King is not in check.
+\n
+- There are no legal moves for any of the pieces on the board.
 \n
 \n
-- Vua không bị chiếu.
-\n
-- Không có bước đi hợp lệ cho bất kỳ quân cờ nào trên bàn cờ.
-\n
-\n
-Hòa pat là một trạng thái hấp dẫn trong cờ vua, đặc biệt khi một bên đang bị thế và không có cách nào để thoát khỏi chiếu. Nếu người chơi không cẩn thận, họ có thể bị hòa pat thay vì thua trận."
+Stalemate is an intriguing state in chess, especially when one side is in a difficult position and has no way to escape check. If players are not careful, they can end up with a draw by stalemate instead of losing the game."
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"

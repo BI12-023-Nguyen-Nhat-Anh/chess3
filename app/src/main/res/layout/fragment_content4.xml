@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nước nhập thành"
+                android:text="Lesson 3: Castling"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"
@@ -32,16 +32,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nước nhập thành là thuật ngữ trong cờ vua để chỉ việc di chuyển quân Vua từ vị trí ban đầu của nó đến ô cung của quân đối phương. Khi quân Vua di chuyển vào ô cung của quân đối phương, người chơi đã đạt được mục tiêu chính trong cờ vua, gọi là nước nhập thành hoặc chiếu hết (checkmate).
+                android:text="Castling is a term in chess that refers to the move where the King is moved from its initial position to the opposite side of the opponent's pieces. When the King reaches the opposite side, the player has achieved the main goal in chess, known as castling or checkmate.
+
 \n
 \n
-Đối với người chơi đi trước (người chơi trắng), nước nhập thành có thể được thực hiện bằng cách di chuyển quân Vua vào ô cung của quân đối phương mà không bị chiếu và không có cách nào để quân đối phương chặn đường chiếu. Khi đạt được nước nhập thành, người chơi trắng giành chiến thắng.
+For the player moving first (the white player), castling can be performed by moving the King to the opposite side without being in check and without any way for the opponent's pieces to block the check. When castling is achieved, the white player wins the game.
+
 \n
 \n
-Đối với người chơi sau (người chơi đen), nước nhập thành có thể được tránh bằng cách di chuyển quân Vua để thoát khỏi chiếu hoặc chặn đường chiếu bằng cách đặt một quân cờ khác vào vị trí giữa quân cờ chiếu và Vua.
+For the player moving second (the black player), castling can be avoided by moving the King to escape the check or by blocking the check by placing another piece between the checking piece and the King.
+
 \n
 \n
-Nước nhập thành là mục tiêu của mỗi người chơi trong cờ vua và đòi hỏi sự chiến thuật, tính toán và phối hợp giữa các quân cờ để đạt được."
+Castling is the objective of each player in chess and requires strategy, calculation, and coordination between the pieces to achieve."
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"

@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tấn công và phòng thủ.Chiếu. Chiếu rút. Chiếu đôi."
+                android:text="Lesson 2: Attack and Defense. Check. Check retreat. Double check."
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"
@@ -32,19 +32,24 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tấn công và phòng thủ là hai khái niệm quan trọng trong cờ vua. Dưới đây là một số khái niệm cơ bản liên quan đến chiếu và phòng thủ:
+
+                android:text="Attack and defense are two important concepts in chess. Here are some basic concepts related to check and defense:
+
 \n
 \n
-- Chiếu (Check): Khi một quân Vua bị đe dọa bởi quân đối phương, ta nói rằng Vua đó bị chiếu. Khi Vua bị chiếu, người chơi phải tìm cách di chuyển Vua để thoát khỏi chiếu hoặc phải tìm cách chặn đường chiếu bằng cách đặt một quân cờ khác vào vị trí giữa quân cờ chiếu và Vua.
+- Check: When a King is threatened by an opponent's piece, it is said to be in check. When a King is in check, the player must find a way to move the King to escape the check or block the check by placing another piece between the checking piece and the King.
+
 \n
 \n
-- Chiếu rút (Checkmate): Khi Vua bị chiếu và không có cách nào để di chuyển hoặc chặn đường chiếu, ta nói rằng Vua bị chiếu rút. Điều này đồng nghĩa với việc người chơi bị chiếu rút đã thua cuộc.
+- Checkmate: When a King is in check and there is no legal move or blocking the check, it is checkmate. This means the player in checkmate has lost the game.
+
 \n
 \n
-- Chiếu đôi (Double check): Khi có hai quân cờ đối phương đồng thời chiếu Vua, ta nói rằng Vua bị chiếu đôi. Trong trường hợp này, người chơi phải di chuyển Vua để thoát khỏi chiếu, vì không thể chặn đường chiếu bằng một quân cờ khác.
+- Double check: When two opponent's pieces simultaneously check the King, it is called a double check. In this case, the player must move the King to escape the check because it is not possible to block the check with another piece.
+
 \n
 \n
-Đây chỉ là những khái niệm cơ bản liên quan đến tấn công và phòng thủ trong cờ vua. Cờ vua là một trò chơi phức tạp với nhiều chiến thuật và chiến lược khác nhau."
+These are just basic concepts related to attack and defense in chess. Chess is a complex game with many different strategies and tactics."
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"
