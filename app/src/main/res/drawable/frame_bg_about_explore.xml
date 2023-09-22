@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="20dp"></corners>
+                    <gradient
+                        android:type="linear"
+                        android:startColor="#2B4DFB"
+                        android:angle="90" /> <!-- Màu bắt đầu -->
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <corners android:radius="20dp" /> <!-- Bán kính góc bo tròn -->
+                    <gradient
+                        android:type="linear"
+                        android:startColor="#2B4DFB"
+                        android:angle="90" /> <!-- Màu bắt đầu -->
+                    <gradient
+                        android:type="linear"
+                        android:endColor="#D9D9D9"
+                        android:angle="90" /> <!-- Màu kết thúc -->
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <corners android:radius="20dp" /> <!-- Bán kính góc bo tròn -->
+                    <gradient
+                        android:type="linear"
+                        android:startColor="#2B4DFB"
+                        android:angle="90" /> <!-- Màu bắt đầu -->
+                    <gradient
+                        android:type="linear"
+                        android:endColor="#D9D9D9"
+                        android:angle="90" /> <!-- Màu kết thúc -->
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <corners android:radius="20dp" /> <!-- Bán kính góc bo tròn -->
+                    <gradient
+                        android:type="linear"
+                        android:startColor="#2B4DFB"
+                        android:angle="90" /> <!-- Màu bắt đầu -->
+                    <gradient
+                        android:type="linear"
+                        android:endColor="#D9D9D9"
+                        android:angle="90" /> <!-- Màu kết thúc -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
 </selector>
