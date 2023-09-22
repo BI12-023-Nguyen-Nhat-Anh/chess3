@@ -71,7 +71,7 @@ public class Header_Navbar_Lesson3 extends Fragment {
 
 
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-        Adapter1 adapter = new Adapter1(fragmentManager,getLifecycle());
+        Adapter3 adapter = new Adapter3(fragmentManager,getLifecycle());
         viewPager3.setAdapter(adapter);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
