@@ -37,19 +37,19 @@ public class MainActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 switch (position){
                     case 0:
-                        home_Fragment home = new home_Fragment();
+                        Home_Explore_Content home = new Home_Explore_Content();
                         FragmentManager fragmentHome = getSupportFragmentManager();
                         fragmentHome.beginTransaction().replace(R.id.main, home, "Home").commit();
                         break;
                     case 1:
                         List_Chess list_chess = new List_Chess();
-                        FragmentManager fragmentExplore = getSupportFragmentManager();
-                        fragmentExplore.beginTransaction().replace(R.id.main, list_chess, "List chess").commit();
+                        FragmentManager fragmentListChess = getSupportFragmentManager();
+                        fragmentListChess.beginTransaction().replace(R.id.main, list_chess, "List chess").commit();
                         break;
                     case 2:
-                        Lesson_0 lesson = new Lesson_0();
-                        FragmentManager fragmentLesson = getSupportFragmentManager();
-                        fragmentLesson.beginTransaction().replace(R.id.main, lesson, "Lesson").commit();
+                        List_Lesson list_lesson = new List_Lesson();
+                        FragmentManager fragmenListLesson = getSupportFragmentManager();
+                        fragmenListLesson.beginTransaction().replace(R.id.main, list_lesson, "List Lesson").commit();
                         break;
                     case 3:
                         HeaderProfileFragment profile = new HeaderProfileFragment();

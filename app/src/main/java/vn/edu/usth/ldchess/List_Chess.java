@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -64,12 +65,12 @@ public class List_Chess extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootview = inflater.inflate(R.layout.fragment_list_chess, container,false);
-        ImageView pawn=rootview.findViewById(R.id.pawnbutton);
-        ImageView knight=rootview.findViewById(R.id.knightbutton);
-        ImageView bishop=rootview.findViewById(R.id.bishopbutton);
-        ImageView king=rootview.findViewById(R.id.kingbutton);
-        ImageView queen=rootview.findViewById(R.id.queenbutton);
-        ImageView rock=rootview.findViewById(R.id.rookbutton);
+        RelativeLayout pawn=rootview.findViewById(R.id.pawnbutton);
+        RelativeLayout knight=rootview.findViewById(R.id.knightbutton);
+        RelativeLayout bishop=rootview.findViewById(R.id.bishopbutton);
+        RelativeLayout king=rootview.findViewById(R.id.kingbutton);
+        RelativeLayout queen=rootview.findViewById(R.id.queenbutton);
+        RelativeLayout rock=rootview.findViewById(R.id.rookbutton);
 
 
         pawn.setOnClickListener(new View.OnClickListener() {
