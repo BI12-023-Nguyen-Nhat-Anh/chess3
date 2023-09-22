@@ -1,5 +1,6 @@
 package vn.edu.usth.ldchess;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -60,5 +61,9 @@ public class Home_Explore_Content extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home__explore__content, container, false);
+    }
+
+    public void onBackPressed() {
+        getActivity().finishAffinity();
     }
 }

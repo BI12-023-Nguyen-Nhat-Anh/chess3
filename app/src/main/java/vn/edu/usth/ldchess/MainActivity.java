@@ -120,13 +120,17 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment currentFragment = fragmentManager.findFragmentById(R.id.main);
-        if (currentFragment instanceof List_Chess) {
+        if (currentFragment instanceof Home_Explore_Content) {
+            Home_Explore_Content home = (Home_Explore_Content) currentFragment;
+            home.onBackPressed();
+        }
+        else if (currentFragment instanceof List_Chess) {
             List_Chess list_chess = (List_Chess) currentFragment;
             list_chess.onBackPressed();
         }
-        else if(currentFragment instanceof Lesson_0){
-            Lesson_0 lesson = (Lesson_0) currentFragment;
-            lesson.onBackPressed();
+        else if(currentFragment instanceof List_Lesson){
+            List_Lesson list_lesson = (List_Lesson) currentFragment;
+            list_lesson.onBackPressed();
         }
         else if(currentFragment instanceof HeaderProfileFragment){
             HeaderProfileFragment profile = (HeaderProfileFragment) currentFragment;
