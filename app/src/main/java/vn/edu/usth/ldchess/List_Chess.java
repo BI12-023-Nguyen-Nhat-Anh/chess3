@@ -83,9 +83,7 @@ public class List_Chess extends Fragment {
                 fragmentManager.beginTransaction()
                         .replace(R.id.main, pawn, "Pawn")
                         .commit();
-                View rootView = getActivity().getWindow().getDecorView().findViewById(android.R.id.content);
-                ScrollView list_chess = rootView.findViewById(R.id.list_chess);
-                list_chess.setVisibility(View.INVISIBLE);
+                chess_click();
             }
         });
 
@@ -96,6 +94,7 @@ public class List_Chess extends Fragment {
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, knight, "Knight")
                         .commit();
+                chess_click();
             }
         });
 
@@ -106,6 +105,7 @@ public class List_Chess extends Fragment {
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, king, "King")
                         .commit();
+                chess_click();
             }
         });
 
@@ -116,6 +116,7 @@ public class List_Chess extends Fragment {
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, queen, "Queen")
                         .commit();
+                chess_click();
             }
         });
 
@@ -126,6 +127,7 @@ public class List_Chess extends Fragment {
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, bishop, "Bishop")
                         .commit();
+                chess_click();
             }
         });
 
@@ -136,9 +138,15 @@ public class List_Chess extends Fragment {
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, rock, "Rock")
                         .commit();
+                chess_click();
             }
         });
         return rootview;
+    }
+    public void chess_click(){
+        View rootView = getActivity().getWindow().getDecorView().findViewById(android.R.id.content);
+        ScrollView list_chess = rootView.findViewById(R.id.list_chess);
+        list_chess.setVisibility(View.INVISIBLE);
     }
     public void onBackPressed() {
         startActivity(new Intent(getActivity(), MainActivity.class));
