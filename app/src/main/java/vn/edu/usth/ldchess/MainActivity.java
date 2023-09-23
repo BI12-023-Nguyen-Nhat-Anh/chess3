@@ -9,7 +9,6 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -63,9 +62,7 @@ public class MainActivity extends AppCompatActivity {
         nav_bottom.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int itemId = item.getItemId();//                    case R.id.home_nav:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.home_nav);
-//                        break;
+                int itemId = item.getItemId();
                 if (itemId == R.id.explore) {
                     viewpager.setCurrentItem(1);
                     return true;
