@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -76,10 +77,15 @@ public class List_Chess extends Fragment {
         pawn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PawnFragment pawn=new PawnFragment();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, pawn, "Pawn")
+                PawnFragment pawn = new PawnFragment();
+                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+
+                fragmentManager.beginTransaction()
+                        .replace(R.id.main, pawn, "Pawn")
                         .commit();
+                View rootView = getActivity().getWindow().getDecorView().findViewById(android.R.id.content);
+                ScrollView list_chess = rootView.findViewById(R.id.list_chess);
+                list_chess.setVisibility(View.INVISIBLE);
             }
         });
 

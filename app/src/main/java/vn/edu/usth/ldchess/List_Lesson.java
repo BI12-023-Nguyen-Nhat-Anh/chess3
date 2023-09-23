@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -76,6 +78,9 @@ public class List_Lesson extends Fragment {
                 FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.main, history, "History of chess")
                         .addToBackStack(null).commit();
+                View rootView = getActivity().getWindow().getDecorView().findViewById(android.R.id.content);
+                LinearLayout list_lesson = rootView.findViewById(R.id.list_lesson);
+                list_lesson.setVisibility(View.INVISIBLE);
             }
         });
 

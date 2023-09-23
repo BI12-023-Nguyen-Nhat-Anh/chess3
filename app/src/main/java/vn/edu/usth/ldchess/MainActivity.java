@@ -153,8 +153,8 @@ public class MainActivity extends AppCompatActivity {
             queen.onBackPressed();
         }
         else if(currentFragment instanceof BishopFragment){
-            BishopFragment bihsop = (BishopFragment) currentFragment;
-            bihsop.onBackPressed();
+            BishopFragment bishop = (BishopFragment) currentFragment;
+            bishop.onBackPressed();
         }
         else if(currentFragment instanceof KnightFragment){
             KnightFragment knight = (KnightFragment) currentFragment;

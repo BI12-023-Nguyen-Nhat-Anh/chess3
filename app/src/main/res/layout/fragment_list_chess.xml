@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".List_Chess">
+    tools:context=".List_Chess"
+    android:id="@+id/list_chess">
 
 
     <LinearLayout

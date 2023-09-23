@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -60,8 +61,9 @@ public class PawnFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View rootview=inflater.inflate(R.layout.fragment_pawn, container, false);
+        // Inflate the layout for this fragment
+
         RelativeLayout next=rootview.findViewById(R.id.next);
         RelativeLayout back=rootview.findViewById(R.id.previous);
 

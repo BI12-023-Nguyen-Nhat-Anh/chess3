@@ -18,32 +18,40 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="280dp"
-                    android:id="@+id/previous">
+                    android:id="@+id/previous"
+                    >
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/previous"
-                        android:layout_centerInParent="true"/>
+                        android:layout_centerInParent="true"
+
+                        />
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="-100dp"
-                        android:src="@drawable/queen_unactive"/>
+                        android:layout_width="150dp"
+                        android:layout_height="280dp"
+                        android:layout_marginLeft="-70dp"
+                        android:src="@drawable/queen_unactive"
+
+                        />
                 </RelativeLayout>
+
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="280dp"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp">
+                    android:layout_marginRight="20dp"
+                    android:layout_centerInParent="true">
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="280dp"
@@ -59,19 +67,29 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="280dp"
-                    android:id="@+id/next">
+                    android:id="@+id/next"
+                    android:layout_alignParentRight="true"
+                    >
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/next"
-                        android:layout_centerInParent="true"/>
+                        android:layout_centerInParent="true"
+
+                        />
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="-100dp"
-                        android:src="@drawable/rock_unactive"/>
+                        android:layout_width="150dp"
+                        android:layout_height="280dp"
+                        android:layout_marginRight="-70dp"
+                        android:src="@drawable/rock_unactive"
+
+                        />
                 </RelativeLayout>
-            </LinearLayout>
+
+            </RelativeLayout>
+
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
