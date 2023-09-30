@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,121 +10,251 @@
     android:id="@+id/nanh_profile">
 
     <!-- TODO: Update blank fragment layout -->
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_margin="20dp">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="My Profile"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="50dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:paddingBottom="30dp"/>-->
+
+<!--            &lt;!&ndash;            Avatar and basic information of the user&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:layout_marginBottom="20dp">-->
+<!--                &lt;!&ndash;                Library to make avatar circle&ndash;&gt;-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="100dp"-->
+<!--                    android:layout_marginRight="15dp">-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="100dp"-->
+<!--                        android:src="@drawable/avatar"/>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                &lt;!&ndash;                Separate 2 lines of text&ndash;&gt;-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Nguyễn Nhật Anh"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="25dp"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Advanced - Build Skills"/>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="123dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    >-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/challenges"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="0"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_centerHorizontal="true"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Challenges"-->
+<!--                        android:layout_below="@id/challenges"-->
+<!--                        android:layout_centerHorizontal="true"/>-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="123dp"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/followers"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="0"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:textSize="20dp"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Followers"-->
+<!--                        android:layout_below="@id/followers"-->
+<!--                        android:layout_centerHorizontal="true"/>-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="123dp"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/following"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="0"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_centerHorizontal="true"/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Following"-->
+<!--                        android:layout_below="@id/following"-->
+<!--                        android:layout_centerHorizontal="true"/>-->
+<!--                </RelativeLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <com.google.android.material.tabs.TabLayout-->
+<!--                android:id="@+id/tab_layout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:tabMode="fixed"-->
+<!--                app:tabGravity="fill"-->
+<!--                app:tabIndicatorGravity="stretch"-->
+<!--                app:tabSelectedTextColor="@color/white"-->
+<!--                app:tabIndicatorAnimationMode="elastic"-->
+<!--                app:tabIndicator="@drawable/tab_indicator">-->
+
+<!--            </com.google.android.material.tabs.TabLayout>-->
+<!--            <androidx.viewpager2.widget.ViewPager2-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:id="@+id/viewpager">-->
+
+<!--            </androidx.viewpager2.widget.ViewPager2>-->
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView-->>-->
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="20dp">
-        <LinearLayout
+        android:layout_height="match_parent">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
             <TextView
+                android:id="@+id/my_profile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="My Profile"
                 android:textColor="@color/white"
                 android:textSize="50dp"
                 android:textStyle="bold"
-                android:paddingBottom="30dp"/>
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp"
+                android:paddingLeft="20dp"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/my_profile">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/avatar"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    />
 
-            <!--            Avatar and basic information of the user-->
-            <LinearLayout
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/name_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_profile"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="21dp"
+                android:layout_toRightOf="@id/image"
+                android:text="Nguyễn Nhật Anh"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_profile"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="-1dp"
+                android:layout_toRightOf="@id/image"
+                android:text="Advanced - Build Skills"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/challenges"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="20dp">
-                <!--                Library to make avatar circle-->
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="100dp"
-                    android:layout_marginRight="15dp">
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/avatar"/>
-                </androidx.cardview.widget.CardView>
+                android:layout_below="@id/image"
+                android:paddingLeft="58dp"
+                android:text="0"
+                android:textSize="20dp" />
 
-                <!--                Separate 2 lines of text-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Nguyễn Nhật Anh"
-                        android:textColor="@color/white"
-                        android:textSize="25dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Advanced - Build Skills"/>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/text_challenges"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_below="@id/challenges"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="15dp"
+                android:text="Challenges" />
 
-                <RelativeLayout
-                    android:layout_width="123dp"
-                    android:layout_height="wrap_content"
-                    >
-                    <TextView
-                        android:id="@+id/challenges"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="0"
-                        android:textSize="20dp"
-                        android:layout_centerHorizontal="true"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Challenges"
-                        android:layout_below="@id/challenges"
-                        android:layout_centerHorizontal="true"/>
-                </RelativeLayout>
+            <TextView
+                android:id="@+id/followers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:paddingLeft="190dp"
+                android:text="0"
+                android:textSize="20dp" />
 
-                <RelativeLayout
-                    android:layout_width="123dp"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:id="@+id/followers"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="0"
-                        android:layout_centerHorizontal="true"
-                        android:textSize="20dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Followers"
-                        android:layout_below="@id/followers"
-                        android:layout_centerHorizontal="true"/>
-                </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/followers"
+                android:paddingLeft="150dp"
+                android:text="Followers" />
 
-                <RelativeLayout
-                    android:layout_width="123dp"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:id="@+id/following"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="0"
-                        android:textSize="20dp"
-                        android:layout_centerHorizontal="true"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Following"
-                        android:layout_below="@id/following"
-                        android:layout_centerHorizontal="true"/>
-                </RelativeLayout>
-            </LinearLayout>
+            <TextView
+                android:id="@+id/following"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:paddingLeft="320dp"
+                android:text="0"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/following"
+                android:paddingLeft="280dp"
+                android:text="Following" />
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tab_layout"
@@ -135,17 +265,23 @@
                 app:tabIndicatorGravity="stretch"
                 app:tabSelectedTextColor="@color/white"
                 app:tabIndicatorAnimationMode="elastic"
+                android:layout_below="@id/text_challenges"
                 app:tabIndicator="@drawable/tab_indicator">
 
             </com.google.android.material.tabs.TabLayout>
             <androidx.viewpager2.widget.ViewPager2
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/viewpager">
+                android:id="@+id/viewpager"
+                android:layout_below="@id/tab_layout">
 
             </androidx.viewpager2.widget.ViewPager2>
 
-        </LinearLayout>
+        </RelativeLayout>
+
     </ScrollView>
 
-</LinearLayout>
+
+</RelativeLayout>
+
+
