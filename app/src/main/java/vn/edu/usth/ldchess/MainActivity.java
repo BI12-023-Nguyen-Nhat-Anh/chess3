@@ -133,33 +133,9 @@ public class MainActivity extends AppCompatActivity {
             HeaderProfileFragment profile = (HeaderProfileFragment) currentFragment;
             profile.onBackPressed();
         }
-        else if(currentFragment instanceof List_Chess){
-            List_Chess list_chess = (List_Chess) currentFragment;
-            list_chess.onBackPressed();
-        }
-        else if(currentFragment instanceof PawnFragment){
-            PawnFragment pawn = (PawnFragment) currentFragment;
-            pawn.onBackPressed();
-        }
-        else if(currentFragment instanceof KingFragment){
-            KingFragment king = (KingFragment) currentFragment;
-            king.onBackPressed();
-        }
-        else if(currentFragment instanceof QueenFragment){
-            QueenFragment queen = (QueenFragment) currentFragment;
-            queen.onBackPressed();
-        }
-        else if(currentFragment instanceof BishopFragment){
-            BishopFragment bishop = (BishopFragment) currentFragment;
-            bishop.onBackPressed();
-        }
-        else if(currentFragment instanceof KnightFragment){
-            KnightFragment knight = (KnightFragment) currentFragment;
-            knight.onBackPressed();
-        }
-        else if(currentFragment instanceof CastleFragment){
-            CastleFragment rock = (CastleFragment) currentFragment;
-            rock.onBackPressed();
+        else if(currentFragment instanceof ChessManFragment){
+            ChessManFragment ChessMan = (ChessManFragment) currentFragment;
+            ChessMan.onBackPressed();
         }
         else {
             super.onBackPressed();

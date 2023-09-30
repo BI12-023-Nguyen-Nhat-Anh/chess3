@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KnightFragment"
+    tools:context=".PawnFragment"
     android:scrollbars="vertical"
     android:background="#151a22"
-    android:id="@+id/knight">
+    android:id="@+id/chess_man">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -39,9 +39,7 @@
                         android:layout_width="150dp"
                         android:layout_height="280dp"
                         android:layout_marginLeft="-70dp"
-                        android:src="@drawable/pawn_unactive"
-
-                        />
+                        android:id="@+id/previous_chess"/>
                 </RelativeLayout>
 
 
@@ -60,7 +58,7 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/knight" />
+                        android:id="@+id/chess" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -80,15 +78,10 @@
                         android:layout_width="150dp"
                         android:layout_height="280dp"
                         android:layout_marginRight="-70dp"
-                        android:src="@drawable/king_unactive"
-
-                        />
+                        android:id="@+id/next_chess"/>
                 </RelativeLayout>
 
             </RelativeLayout>
-
-
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -105,14 +98,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="20dp"
-                        android:text="About the Knight"
+                        android:id="@+id/title"
                         android:textColor="@color/white"
                         android:textSize="35dp" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="The knight is a piece in the game of chess. It is performed by a horse with special mobility. The knight can move in an 'L' shape, i.e. move two spaces horizontally or vertically, then one square perpendicularly.\n\nThe knight can jump over other pieces in the process move. This allows it to overcome obstacles and attack positions that other troops cannot reach. However, the horse also has the limitation of not being able to move in a straight or diagonal line.\n\nWhat's special about the horse is its ability to attack in an 'L' shape, allowing it to create unexpected moves. easily predicted by opponents. This makes the horse an important strategic piece in attack and defense."
+                        android:id="@+id/detail"
                         android:textColor="@color/white" />
                 </LinearLayout>
 
