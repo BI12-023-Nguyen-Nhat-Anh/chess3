@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tốt. Phong cấp Tốt. Bắt Tốt qua đường"
+                android:text="Lesson 1: Pawn. Promote Pawn. Capture en passant"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"
@@ -32,12 +32,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bắt Tốt qua đường (tiếng Pháp: [ɑ̃ paˈsɑ̃] En passant) là nước đi đặc biệt để bắt quân trong cờ vua, chỉ xảy ra khi quân Tốt bắt quân Tốt vừa di chuyển hai ô trong lượt đầu tiên theo hướng chéo lên. Quân Tốt sau khi thực hiện en passant sẽ ở vị trí mà nếu như con Tốt bị bắt ban đầu chỉ di chuyển một ô. Luật này sinh ra nhằm đảm bảo rằng một quân Tốt sẽ không thể thoát khỏi Tốt của đối phương một cách dễ dàng bằng việc di chuyển hai ô ngay lập tức.
+                android:text="Capture en passant (French: [ɑ̃ paˈsɑ̃]) is a special move in chess used to capture an opponent's pawn. It occurs when a pawn captures an opponent's pawn that has just moved two squares forward from its starting position in the first move. After executing en passant, the capturing pawn occupies the square that the captured pawn would have moved to if it had only moved one square. This rule ensures that a pawn cannot easily escape from an opponent's pawn by moving two squares immediately.
 
 \n
 \n
-Việc bắt Tốt qua đường chỉ có thể xảy ra ngay trong lượt mà quân Tốt đã di chuyển hai ô lập tức, không thể được thực hiện ở các nước đi sau đó.[3] Trong biên bản ván đấu, hành động này có thể được kí hiệu quốc tế là e.p, kí hiệu tiếng Việt là q.đ."
-                android:textColor="#FFFFFF"
+The capture en passant can only occur immediately in the same move where the opposing pawn has moved two squares. It cannot be performed in subsequent moves. In notation, this move is often denoted as e.p in international notation or q.đ in Vietnamese notation."
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"
                 android:textSize="14sp"

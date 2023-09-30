@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hòa cờ. Chiếu vĩnh viễn"
+                android:text="Lesson 4: A draw. Perpetual check"
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"
@@ -32,23 +32,18 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hòa cờ và Chiếu vĩnh viễn là hai thuật ngữ quan trọng trong cờ vua. Dưới đây là giải thích về từng thuật ngữ:
+                android:text="Draw and Stalemate are two important terms in chess. Here is an explanation of each term:
 \n
 \n
-1) Hòa cờ (Draw): Hòa cờ xảy ra khi một trong hai người chơi trong cờ vua đề nghị hòa hoặc khi một trong các điều kiện hòa cờ đặc biệt xảy ra. Có một số trường hợp khi trận đấu kết thúc mà không có người chơi nào thắng hoặc thua, và kết quả được công nhận là hòa cờ. Một số điều kiện hòa cờ bao gồm:
+Draw: A draw occurs when one of the players in chess proposes a draw or when certain specific draw conditions are met. There are several cases where the game ends without a winner or loser, and the result is recognized as a draw. Some draw conditions include:
+\n
+Draw by insufficient material to checkmate.
+\n
+Draw by mutual agreement between the players.
 \n
 \n
-- Hòa theo quy tắc nửa điểm khi không còn đủ quân cờ để chiếu hết.
-- Hòa theo thỏa thuận giữa hai người chơi.
-
-\n
-\n
-2) Chiếu vĩnh viễn (Stalemate): Chiếu vĩnh viễn xảy ra khi Vua không bị chiếu mà không còn bước đi hợp lệ nào khả dĩ. Trong trường hợp này, người chơi không bị thua mà trận đấu được kết thúc với một kết quả hòa.
-Chiếu vĩnh viễn thường xảy ra khi Vua bị bao vây, không còn nơi để di chuyển và không bị chiếu.
-\n
-\n
-Khi xảy ra hòa cờ hoặc chiếu vĩnh viễn, trận đấu kết thúc mà không có người chơi nào thắng hoặc thua. Đây là một phần trong chiến thuật và quy tắc của cờ vua, và nó thể hiện tính cân bằng và sự phối hợp giữa hai người chơi."
-
+Stalemate: Stalemate occurs when the King is not in check but has no legal moves available. In this case, the player is not defeated, and the game ends with a draw. Stalemate often happens when the King is surrounded, has no available squares to move, and is not in check.
+When a draw or stalemate occurs, the game ends without a winner or loser. It is part of the tactics and rules of chess, reflecting the balance and coordination between the two players."
                 android:textColor="#FFFFFF"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/dmsans_variablefont_opsz"

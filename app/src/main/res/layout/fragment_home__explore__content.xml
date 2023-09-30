@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,7 +51,7 @@
                         android:layout_gravity="center"
                         android:background="@null"
                         android:layout_weight="1"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:fontFamily="@font/dmsans_variablefont_opsz"
                         android:padding="15dp"
                         >
@@ -245,6 +246,7 @@
             android:background="@drawable/background_home_explore"
             android:paddingTop="10dp"
             >
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -297,7 +299,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="See all"
-                                android:textSize="16sp"
+                                android:textSize="14sp"
                                 android:textColor="#000000"
                                 android:fontFamily="@font/dmsans_variablefont_opsz"
                                 android:textStyle="bold"
@@ -705,7 +707,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="See all"
-                                android:textSize="16sp"
+                                android:textSize="14sp"
                                 android:textColor="#000000"
                                 android:fontFamily="@font/dmsans_variablefont_opsz"
                                 android:textStyle="bold"
@@ -744,10 +746,9 @@
                             android:fontFamily="@font/dmsans_variablefont_opsz"
                             android:textStyle="bold"
                             android:gravity="start"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:paddingLeft="20dp"
-                            android:paddingBottom="10dp"
+                            android:paddingVertical="10dp"
+                            android:paddingHorizontal="15dp"
+
                             android:background="@drawable/bg_about_learing_explore"
 
                             >
@@ -771,10 +772,8 @@
                             android:fontFamily="@font/dmsans_variablefont_opsz"
                             android:textStyle="bold"
                             android:gravity="start"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:paddingLeft="20dp"
-                            android:paddingBottom="10dp"
+                            android:paddingVertical="10dp"
+                            android:paddingHorizontal="15dp"
                             android:background="@drawable/bg_about_learing_explore_unactive"
 
                             >
@@ -797,10 +796,8 @@
                             android:fontFamily="@font/dmsans_variablefont_opsz"
                             android:textStyle="bold"
                             android:gravity="start"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:paddingLeft="20dp"
-                            android:paddingBottom="10dp"
+                            android:paddingVertical="10dp"
+                            android:paddingHorizontal="15dp"
                             android:background="@drawable/bg_about_learing_explore_unactive"
 
                             >
@@ -979,7 +976,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="See all"
-                                android:textSize="16sp"
+                                android:textSize="14sp"
                                 android:textColor="#000000"
                                 android:fontFamily="@font/dmsans_variablefont_opsz"
                                 android:textStyle="bold"
@@ -1018,10 +1015,8 @@
                             android:fontFamily="@font/dmsans_variablefont_opsz"
                             android:textStyle="bold"
                             android:gravity="start"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:paddingLeft="20dp"
-                            android:paddingBottom="10dp"
+                            android:paddingVertical="10dp"
+                            android:paddingHorizontal="15dp"
                             android:background="@drawable/bg_about_learing_explore"
 
                             >
@@ -1071,10 +1066,8 @@
                             android:fontFamily="@font/dmsans_variablefont_opsz"
                             android:textStyle="bold"
                             android:gravity="start"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:paddingLeft="20dp"
-                            android:paddingBottom="10dp"
+                            android:paddingVertical="10dp"
+                            android:paddingHorizontal="15dp"
                             android:background="@drawable/bg_about_learing_explore_unactive"
 
                             >
@@ -1128,8 +1121,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -1293,8 +1285,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -1458,8 +1449,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -1623,8 +1613,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -1788,8 +1777,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -1953,8 +1941,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -2139,7 +2126,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="See all"
-                                android:textSize="16sp"
+                                android:textSize="14sp"
                                 android:textColor="#000000"
                                 android:fontFamily="@font/dmsans_variablefont_opsz"
                                 android:textStyle="bold"
@@ -2178,10 +2165,8 @@
                             android:fontFamily="@font/dmsans_variablefont_opsz"
                             android:textStyle="bold"
                             android:gravity="start"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:paddingLeft="20dp"
-                            android:paddingBottom="10dp"
+                            android:paddingVertical="10dp"
+                            android:paddingHorizontal="15dp"
                             android:background="@drawable/bg_about_learing_explore"
 
                             >
@@ -2205,10 +2190,8 @@
                             android:fontFamily="@font/dmsans_variablefont_opsz"
                             android:textStyle="bold"
                             android:gravity="start"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:paddingLeft="20dp"
-                            android:paddingBottom="10dp"
+                            android:paddingVertical="10dp"
+                            android:paddingHorizontal="15dp"
                             android:background="@drawable/bg_about_learing_explore_unactive"
 
                             >
@@ -2231,10 +2214,8 @@
                             android:fontFamily="@font/dmsans_variablefont_opsz"
                             android:textStyle="bold"
                             android:gravity="start"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:paddingLeft="20dp"
-                            android:paddingBottom="10dp"
+                            android:paddingVertical="10dp"
+                            android:paddingHorizontal="15dp"
                             android:background="@drawable/bg_about_learing_explore_unactive"
 
                             >
@@ -2288,8 +2269,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -2453,8 +2433,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -2618,8 +2597,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -2783,8 +2761,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -2841,8 +2818,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="horizontal"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
+                                        android:layout_marginHorizontal="10dp"
                                         >
                                         <ImageView
                                             android:layout_width="match_parent"
@@ -2948,8 +2924,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -3113,8 +3088,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
                                 />
                             <LinearLayout
@@ -3239,56 +3213,81 @@
 
             </LinearLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_marginTop="40dp"
-                android:layout_marginBottom="40dp"
-                android:layout_marginLeft="0dp"
-
+                android:layout_marginBottom="30dp"
                 >
-                <ImageView
+
+                <RelativeLayout
+                    android:layout_width="400dp"
+                    android:layout_height="600dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_them_chess_new">
+
+                </RelativeLayout>
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/theme_chess">
+                    android:orientation="vertical"
 
-                </ImageView>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="Join our courses"
-                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                    android:gravity="center"
-                    android:textSize="24sp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="12dp">
 
-                </TextView>
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/theme_chess_new">
 
-                <TextView
-                    android:id="@+id/text_view7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Lorem ipsum dolor sit amet, consectetur"
-                    android:textColor="#FFFFFF" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="adipiscing elit, sed do eiusmod tempor incididun"
-                    android:textColor="#FFFFFF" />
-                <ImageView
-                    android:id="@+id/button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/button" />
-            </LinearLayout>
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Join our courses"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:gravity="center"
+                        android:textSize="24sp"
+                        android:layout_marginVertical="16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/text_view7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Lorem ipsum dolor sit amet, consectetur"
+                        android:textColor="#FFFFFF" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="adipiscing elit, sed do eiusmod tempor incididun"
+                        android:textColor="#FFFFFF" />
+                    <RelativeLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/border_radius_for_logo_active">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Welcome to lesson"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:paddingHorizontal="16dp"
+                            android:paddingVertical="12dp"
+                            android:fontFamily="@font/dmsans_variablefont_opsz"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
         </LinearLayout>
 
     </LinearLayout>
