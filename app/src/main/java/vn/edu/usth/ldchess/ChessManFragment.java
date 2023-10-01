@@ -25,6 +25,12 @@ public class ChessManFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
+//    Create a variable to take input from the user when they choose chess
+    private int position;
+
+//    Create a hashmap to contain array of the chess
+    private HashMap<Integer, Object[]> chess;
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -64,13 +70,9 @@ public class ChessManFragment extends Fragment {
         }
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_chess_man, container, false);
-
-        HashMap<Integer, Object[]> chess=new HashMap<>();
+//    Load the elements from the array chess into hashmap
+    public void list_item(){
+        chess=new HashMap<>();
 
         int[] list_chess_active={R.drawable.pawn, R.drawable.knight, R.drawable.king, R.drawable.queen, R.drawable.bishop, R.drawable.rock};
         int[] list_chess_unactive={R.drawable.pawn_unactive, R.drawable.knight_unactive, R.drawable.king_unactive, R.drawable.queen_unactive, R.drawable.bishop_unactive, R.drawable.rock_unactive};
@@ -104,31 +106,51 @@ public class ChessManFragment extends Fragment {
                 chess.put(i,array);
             }
         }
+    }
 
+//    Take the value from the user when they choose which chess they want to see
+    public void setChessPiece(int num){
+        this.position=num;
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+//        Load the hashmap
+        list_item();
+
+//        Take the input to show the chess that they want to see
+        final int[] current={position};
+        // Inflate the layout for this fragment
+        View view=inflater.inflate(R.layout.fragment_chess_man, container, false);
+
+//        Take the position where text or image should be
         ImageView active_chess=view.findViewById(R.id.chess);
         ImageView previous_chess=view.findViewById(R.id.previous_chess);
         ImageView next_chess=view.findViewById(R.id.next_chess);
         TextView title_chess=view.findViewById(R.id.title);
         TextView detail_chess=view.findViewById(R.id.detail);
 
-        Object[] item=chess.get(0);
+//        Take the array from the hashmap at position
+        Object[] item=chess.get(position);
         previous_chess.setImageResource((int)item[0]);
         active_chess.setImageResource((int)item[1]);
         next_chess.setImageResource((int)item[2]);
         title_chess.setText((String)item[3]);
         detail_chess.setText((String)item[4]);
 
-        final int[] position={0};
+//        Change to next chess when user click
         next_chess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                position[0]++;
+                current[0]++;
 
-                if(position[0]>=list_chess_active.length){
-                    position[0]=0;
+//                If the current chess is the last chess so we will reset the position to the first chess
+                if(current[0]>=item.length){
+                    current[0]=0;
                 }
 
-                Object[] item=chess.get(position[0]);
+                Object[] item=chess.get(current[0]);
                 previous_chess.setImageResource((int)item[0]);
                 active_chess.setImageResource((int)item[1]);
                 next_chess.setImageResource((int)item[2]);
@@ -137,16 +159,18 @@ public class ChessManFragment extends Fragment {
             }
         });
 
+//        Change to previous chess when user click
         previous_chess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                position[0]--;
+                current[0]--;
 
-                if(position[0]<0) {
-                    position[0]=list_chess_active.length-1;
+//                If current chess is the first chess so we will reset the position to the last chess
+                if(current[0]<0) {
+                    current[0]=item.length-1;
                 }
 
-                Object[] item = chess.get(position[0]);
+                Object[] item = chess.get(current[0]);
                 previous_chess.setImageResource((int) item[0]);
                 active_chess.setImageResource((int) item[1]);
                 next_chess.setImageResource((int) item[2]);

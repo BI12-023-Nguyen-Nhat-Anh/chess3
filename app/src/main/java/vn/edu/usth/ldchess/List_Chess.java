@@ -66,82 +66,64 @@ public class List_Chess extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootview = inflater.inflate(R.layout.fragment_list_chess, container,false);
-        RelativeLayout pawn=rootview.findViewById(R.id.pawnbutton);
-        RelativeLayout knight=rootview.findViewById(R.id.knightbutton);
-        RelativeLayout bishop=rootview.findViewById(R.id.bishopbutton);
-        RelativeLayout king=rootview.findViewById(R.id.kingbutton);
-        RelativeLayout queen=rootview.findViewById(R.id.queenbutton);
-        RelativeLayout rock=rootview.findViewById(R.id.rookbutton);
+        ImageView pawn=rootview.findViewById(R.id.pawnbutton);
+        ImageView knight=rootview.findViewById(R.id.knightbutton);
+        ImageView bishop=rootview.findViewById(R.id.bishopbutton);
+        ImageView king=rootview.findViewById(R.id.kingbutton);
+        ImageView queen=rootview.findViewById(R.id.queenbutton);
+        ImageView rock=rootview.findViewById(R.id.rookbutton);
 
 
         pawn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PawnFragment pawn = new PawnFragment();
-                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
-
-                fragmentManager.beginTransaction()
-                        .replace(R.id.main, pawn, "Pawn")
-                        .commit();
-                chess_click();
+                changeFragment(0);
             }
         });
 
         knight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                KnightFragment knight=new KnightFragment();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, knight, "Knight")
-                        .commit();
-                chess_click();
+                changeFragment(1);
             }
         });
 
         king.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                KingFragment king=new KingFragment();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, king, "King")
-                        .commit();
-                chess_click();
+                changeFragment(2);
             }
         });
 
         queen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                QueenFragment queen=new QueenFragment();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, queen, "Queen")
-                        .commit();
-                chess_click();
+                changeFragment(3);
             }
         });
 
         bishop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                BishopFragment bishop=new BishopFragment();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, bishop, "Bishop")
-                        .commit();
-                chess_click();
+                changeFragment(4);
             }
         });
 
         rock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CastleFragment rock=new CastleFragment();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, rock, "Rock")
-                        .commit();
-                chess_click();
+                changeFragment(5);
             }
         });
         return rootview;
+    }
+    public void changeFragment(Integer num){
+        ChessManFragment chess_man=new ChessManFragment();
+        chess_man.setChessPiece(num);
+        FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.main, chess_man, "Chess main")
+                .commit();
+        chess_click();
     }
     public void chess_click(){
         View rootView = getActivity().getWindow().getDecorView().findViewById(android.R.id.content);
