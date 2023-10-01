@@ -118,18 +118,17 @@ public class ChessManFragment extends Fragment {
         title_chess.setText((String)item[3]);
         detail_chess.setText((String)item[4]);
 
-        AtomicInteger next=new AtomicInteger(1);
+        final int[] position={0};
         next_chess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int current=next.getAndIncrement();
+                position[0]++;
 
-                if(current>=list_chess_active.length){
-                    next.set(1);
-                    current=0;
+                if(position[0]>=list_chess_active.length){
+                    position[0]=0;
                 }
 
-                Object[] item=chess.get(current);
+                Object[] item=chess.get(position[0]);
                 previous_chess.setImageResource((int)item[0]);
                 active_chess.setImageResource((int)item[1]);
                 next_chess.setImageResource((int)item[2]);
@@ -138,18 +137,16 @@ public class ChessManFragment extends Fragment {
             }
         });
 
-        AtomicInteger previous=new AtomicInteger(list_chess_active.length-1);
         previous_chess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int current=previous.getAndDecrement();
+                position[0]--;
 
-                if(current<0) {
-                    previous.set(list_chess_active.length-1);
-                    current=list_chess_active.length-1;
+                if(position[0]<0) {
+                    position[0]=list_chess_active.length-1;
                 }
 
-                Object[] item = chess.get(current);
+                Object[] item = chess.get(position[0]);
                 previous_chess.setImageResource((int) item[0]);
                 active_chess.setImageResource((int) item[1]);
                 next_chess.setImageResource((int) item[2]);
