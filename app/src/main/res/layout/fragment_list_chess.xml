@@ -56,210 +56,59 @@
 
             </ImageView>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            >
+            android:text="@string/hello_blank_fragment">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginRight="10dp"
+            <ImageView
                 android:id="@+id/pawnbutton"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:background="@drawable/shape_chess">
+                android:layout_width="168dp"
+                android:layout_height="253dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/tott" />
 
-                </ImageView>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/pawnnn"
-                    android:padding="10dp">
-
-                </ImageView>
-
-                <ImageView
-                    android:layout_width="118dp"
-                    android:layout_height="223dp"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/tot">
-
-                </ImageView>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/knightbutton"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:background="@drawable/shape_chess">
-
-                </ImageView>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/knighttt"
-                    android:padding="10dp">
-
-                </ImageView>
-
-                <ImageView
-                    android:layout_width="118dp"
-                    android:layout_height="223dp"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/ma">
-
-                </ImageView>
-            </RelativeLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-
+            <ImageView
+                android:layout_width="172dp"
+                android:layout_height="245dp"
+                android:src="@drawable/tuongg"
                 android:id="@+id/bishopbutton"
-                android:layout_marginRight="10dp"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:background="@drawable/shape_chess">
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="200dp"/>
 
-                </ImageView>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/bishoppp"
-                    android:padding="10dp">
+            <ImageView
+                android:layout_width="167dp"
+                android:layout_height="263dp"
+                android:src="@drawable/maa"
+                android:id="@+id/knightbutton"
+                android:layout_marginTop="290dp"
+                android:layout_marginLeft="18dp"/>
 
-                </ImageView>
-
-                <ImageView
-                    android:layout_width="118dp"
-                    android:layout_height="223dp"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/tuong">
-
-                </ImageView>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-
+            <ImageView
+                android:layout_width="172dp"
+                android:layout_height="246dp"
+                android:src="@drawable/xee"
                 android:id="@+id/rookbutton"
-                android:layout_marginLeft="10dp"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:background="@drawable/shape_chess">
+                android:layout_marginTop="298dp"
+                android:layout_marginLeft="200dp"/>
 
-                </ImageView>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/rookkk"
-                    android:padding="10dp">
-
-                </ImageView>
-
-                <ImageView
-                    android:layout_width="118dp"
-                    android:layout_height="223dp"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/xe">
-
-                </ImageView>
-            </RelativeLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginRight="10dp"
+            <ImageView
+                android:layout_width="167dp"
+                android:layout_height="253dp"
+                android:src="@drawable/hauu"
                 android:id="@+id/queenbutton"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:background="@drawable/shape_chess">
+                android:layout_marginTop="560dp"
+                android:layout_marginLeft="18dp"/>
 
-                </ImageView>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/queennn"
-                    android:padding="10dp">
-
-                </ImageView>
-
-                <ImageView
-                    android:layout_width="118dp"
-                    android:layout_height="223dp"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/hau">
-
-                </ImageView>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-
+            <ImageView
+                android:layout_width="172dp"
+                android:layout_height="246dp"
+                android:src="@drawable/vuaa"
                 android:id="@+id/kingbutton"
-                android:layout_marginLeft="10dp"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:background="@drawable/shape_chess">
-
-                </ImageView>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/kinggg"
-                    android:padding="10dp">
-
-                </ImageView>
-
-                <ImageView
-                    android:layout_width="118dp"
-                    android:layout_height="223dp"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/vua">
-
-                </ImageView>
-            </RelativeLayout>
-        </LinearLayout>
+                android:layout_marginTop="564dp"
+                android:layout_marginLeft="200dp"/>
+        </RelativeLayout>
 
 
 
@@ -274,7 +123,8 @@
 
 
 
-<!--        <LinearLayout-->
+
+        <!--        <LinearLayout-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="wrap_content"-->
 <!--            android:orientation="horizontal">-->
