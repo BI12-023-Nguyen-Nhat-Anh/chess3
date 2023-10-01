@@ -117,7 +117,8 @@ public class List_Chess extends Fragment {
         });
         return rootview;
     }
-    public void changeFragment(Integer num){
+//    Receive input from the user and pass it to the setChessPosition function to display the correct chess piece that the user wants
+    public void changeFragment(int num){
         ChessManFragment chess_man=new ChessManFragment();
         chess_man.setChessPiece(num);
         FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();

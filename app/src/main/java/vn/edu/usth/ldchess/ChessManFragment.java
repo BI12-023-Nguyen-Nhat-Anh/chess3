@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -182,6 +184,8 @@ public class ChessManFragment extends Fragment {
     }
 
     public void onBackPressed() {
-        startActivity(new Intent(getActivity(), MainActivity.class));
+        List_Chess list_chess = new List_Chess();
+        FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.main,list_chess).commit();
     }
 }
