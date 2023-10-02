@@ -97,18 +97,7 @@
                         >
 
                     </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="In-demand chess courses."
-                        android:textSize="15sp"
-                        android:textColor="#80FFFFFF"
 
-                        android:layout_alignParentLeft="true"
-                        android:fontFamily="@font/dmsans_variablefont_opsz"
-                        >
-
-                    </TextView>
                 </LinearLayout>
             </RelativeLayout>
             <RelativeLayout
@@ -146,18 +135,7 @@
                         >
 
                     </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="In-demand chess courses."
-                        android:textSize="15sp"
-                        android:textColor="#80FFFFFF"
 
-                        android:layout_alignParentLeft="true"
-                        android:fontFamily="@font/dmsans_variablefont_opsz"
-                        >
-
-                    </TextView>
                 </LinearLayout>
             </RelativeLayout>
             <RelativeLayout
@@ -195,18 +173,7 @@
                         >
 
                     </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="In-demand chess courses."
-                        android:textSize="15sp"
-                        android:textColor="#80FFFFFF"
 
-                        android:layout_alignParentLeft="true"
-                        android:fontFamily="@font/dmsans_variablefont_opsz"
-                        >
-
-                    </TextView>
                 </LinearLayout>
             </RelativeLayout>
             <RelativeLayout
@@ -244,18 +211,7 @@
                         >
 
                     </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="In-demand chess courses."
-                        android:textSize="15sp"
-                        android:textColor="#80FFFFFF"
-                        android:id="@+id/text_bottom"
-                        android:layout_alignParentLeft="true"
-                        android:fontFamily="@font/dmsans_variablefont_opsz"
-                        >
 
-                    </TextView>
                 </LinearLayout>
             </RelativeLayout>
             <RelativeLayout
@@ -293,18 +249,7 @@
                         >
 
                     </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="In-demand chess courses."
-                        android:textSize="15sp"
-                        android:textColor="#80FFFFFF"
 
-                        android:layout_alignParentLeft="true"
-                        android:fontFamily="@font/dmsans_variablefont_opsz"
-                        >
-
-                    </TextView>
                 </LinearLayout>
             </RelativeLayout>
             <RelativeLayout
@@ -342,18 +287,7 @@
                         >
 
                     </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="In-demand chess courses."
-                        android:textSize="15sp"
-                        android:textColor="#80FFFFFF"
 
-                        android:layout_alignParentLeft="true"
-                        android:fontFamily="@font/dmsans_variablefont_opsz"
-                        >
-
-                    </TextView>
                 </LinearLayout>
             </RelativeLayout>
         </LinearLayout>
