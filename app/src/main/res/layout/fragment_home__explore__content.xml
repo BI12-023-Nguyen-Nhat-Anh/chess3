@@ -111,50 +111,21 @@
                                 android:layout_width="150dp"
                                 android:layout_height="150dp"
                                 android:src="@drawable/border_radius_for_lesson"
-
                                 >
 
                             </ImageView>
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                                android:paddingTop="9dp"
                                 android:text="PLAYING CHESS BASIC"
+                                android:textColor="#FFFFFF"
 
                                 android:textSize="16sp"
-                                android:textColor="#FFFFFF"
-                                android:textStyle="bold"
-
-                                android:fontFamily="@font/dmsans_variablefont_opsz"
-                                android:paddingTop="9dp">
-
-                            </TextView>
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="10dp">
-                            <ImageView
-                                android:layout_width="150dp"
-                                android:layout_height="150dp"
-                                android:src="@drawable/border_radius_for_lesson"
-
-                                >
-
-                            </ImageView>
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="PLAYING CHESS BASIC"
-
-                                android:textSize="16sp"
-                                android:textColor="#FFFFFF"
-                                android:textStyle="bold"
-
-                                android:fontFamily="@font/dmsans_variablefont_opsz"
-                                android:paddingTop="9dp">
+                                android:textStyle="bold">
 
                             </TextView>
 
@@ -227,18 +198,6 @@
         </LinearLayout>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -253,7 +212,7 @@
                 android:orientation="vertical"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-               >
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -295,21 +254,6 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="See all"
-                                android:textSize="14sp"
-                                android:textColor="#000000"
-                                android:fontFamily="@font/dmsans_variablefont_opsz"
-                                android:textStyle="bold"
-                                android:gravity="end"
-                                android:padding="10dp"
-                                android:background="@drawable/see_all_explore_bg"
-                                android:layout_alignParentRight="true"
-                                >
-
-                            </TextView>
                         </RelativeLayout>
 
 
@@ -350,7 +294,20 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="5 May 1h 30min"
+                                    android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
+
+                                    android:textSize="16sp"
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+
+                                    android:fontFamily="@font/dmsans_variablefont_opsz"
+                                    android:paddingTop="9dp">
+
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ."
 
                                     android:textSize="12sp"
                                     android:textColor="#80FFFFFF"
@@ -360,6 +317,29 @@
                                     android:paddingTop="9dp">
 
                                 </TextView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_marginRight="18dp"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="200dp"
+                                    android:background="@drawable/border_radius_for_lesson">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_margin="16dp"
+                                        android:background="@drawable/icon_play">
+
+                                    </ImageView>
+                                </RelativeLayout>
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
@@ -412,19 +392,6 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="5 May 1h 30min"
-
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
-
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
-
-                                </TextView>
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
                                     android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
 
                                     android:textSize="16sp"
@@ -450,192 +417,7 @@
                                 </TextView>
 
                             </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:layout_marginRight="18dp"
-                                >
-                                <RelativeLayout
-                                    android:layout_width="200dp"
-                                    android:layout_height="200dp"
-                                    android:background="@drawable/border_radius_for_lesson">
 
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_alignParentBottom="true"
-                                        android:layout_margin="16dp"
-                                        android:background="@drawable/icon_play">
-
-                                    </ImageView>
-                                </RelativeLayout>
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="5 May 1h 30min"
-
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
-
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
-
-                                </TextView>
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
-
-                                    android:textSize="16sp"
-                                    android:textColor="#FFFFFF"
-                                    android:textStyle="bold"
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
-
-                                </TextView>
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ."
-
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
-
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
-
-                                </TextView>
-
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:layout_marginRight="18dp"
-                                >
-                                <RelativeLayout
-                                    android:layout_width="200dp"
-                                    android:layout_height="200dp"
-                                    android:background="@drawable/border_radius_for_lesson">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_alignParentBottom="true"
-                                        android:layout_margin="16dp"
-                                        android:background="@drawable/icon_play">
-
-                                    </ImageView>
-                                </RelativeLayout>
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="5 May 1h 30min"
-
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
-
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
-
-                                </TextView>
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
-
-                                    android:textSize="16sp"
-                                    android:textColor="#FFFFFF"
-                                    android:textStyle="bold"
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
-
-                                </TextView>
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ."
-
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
-
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
-
-                                </TextView>
-
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:layout_marginRight="18dp"
-                                >
-                                <RelativeLayout
-                                    android:layout_width="200dp"
-                                    android:layout_height="200dp"
-                                    android:background="@drawable/border_radius_for_lesson">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_alignParentBottom="true"
-                                        android:layout_margin="16dp"
-                                        android:background="@drawable/icon_play">
-
-                                    </ImageView>
-                                </RelativeLayout>
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="5 May 1h 30min"
-
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
-
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
-
-                                </TextView>
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
-
-                                    android:textSize="16sp"
-                                    android:textColor="#FFFFFF"
-                                    android:textStyle="bold"
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
-
-                                </TextView>
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ."
-
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
-
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
-
-                                </TextView>
-
-                            </LinearLayout>
 
 
 
@@ -698,113 +480,68 @@
                             </TextView>
                         </LinearLayout>
 
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="See all"
-                                android:textSize="14sp"
-                                android:textColor="#000000"
-                                android:fontFamily="@font/dmsans_variablefont_opsz"
-                                android:textStyle="bold"
-                                android:gravity="end"
-                                android:padding="10dp"
-                                android:background="@drawable/see_all_explore_bg"
-                                android:layout_alignParentRight="true"
-                                >
-
-                            </TextView>
-                        </RelativeLayout>
-
-
 
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginTop="24dp"
-                    android:layout_marginBottom="24dp">
-                    <RelativeLayout
+                    android:layout_marginBottom="24dp"
+                    android:orientation="horizontal">
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Studing"
-                            android:textSize="16sp"
-                            android:textColor="#FFFFFF"
-                            android:fontFamily="@font/dmsans_variablefont_opsz"
-                            android:textStyle="bold"
-                            android:gravity="start"
-                            android:paddingVertical="10dp"
-                            android:paddingHorizontal="15dp"
+                        android:background="@drawable/bg_about_learing_explore"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:gravity="start"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="Studying"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
 
-                            android:background="@drawable/bg_about_learing_explore"
+                        android:textStyle="bold"
 
-                            >
+                        >
 
-                        </TextView>
+                    </TextView>
 
-                    </RelativeLayout>
-
-                    <RelativeLayout
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                       >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Recently video "
-                            android:textSize="16sp"
-                            android:textColor="#FFFFFF"
-                            android:fontFamily="@font/dmsans_variablefont_opsz"
-                            android:textStyle="bold"
-                            android:gravity="start"
-                            android:paddingVertical="10dp"
-                            android:paddingHorizontal="15dp"
-                            android:background="@drawable/bg_about_learing_explore_unactive"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_about_learing_explore_unactive"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:gravity="start"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="Recently video "
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
 
-                            >
+                    </TextView>
 
-                        </TextView>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Your courses"
-                            android:textSize="16sp"
-                            android:textColor="#FFFFFF"
-                            android:fontFamily="@font/dmsans_variablefont_opsz"
-                            android:textStyle="bold"
-                            android:gravity="start"
-                            android:paddingVertical="10dp"
-                            android:paddingHorizontal="15dp"
-                            android:background="@drawable/bg_about_learing_explore_unactive"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_about_learing_explore_unactive"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:gravity="start"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="Your courses"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
 
-                            >
+                    </TextView>
 
-                        </TextView>
-
-                    </RelativeLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -812,28 +549,16 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_marginBottom="27dp">
 
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:adjustViewBounds="true"
-
-                            android:src="@drawable/frame_bg_about_explore">
-
-                        </ImageView>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/frame_bg_about_explore"
+                            android:adjustViewBounds="true"
                             android:layout_alignParentBottom="true"
                             android:orientation="vertical"
                             android:padding="30dp"
-                           >
+                            >
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -842,7 +567,6 @@
                                 android:textColor="#FFFFFF"
                                 android:textStyle="bold"
                                 android:fontFamily="@font/dmsans_variablefont_opsz"
-
                                 >
 
                             </TextView>
@@ -860,28 +584,20 @@
 
                             </TextView>
                         </LinearLayout>
-                    </RelativeLayout>
-
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:layout_marginBottom="27dp">
 
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:adjustViewBounds="true"
-
-                            android:src="@drawable/frame_bg_about_explore">
-
-                        </ImageView>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
                             android:orientation="vertical"
+                            android:background="@drawable/frame_bg_about_explore"
+                            android:adjustViewBounds="true"
+                            android:paddingTop="20dp"
                             android:padding="30dp"
                             >
                             <TextView
@@ -967,114 +683,68 @@
                             </TextView>
                         </LinearLayout>
 
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="See all"
-                                android:textSize="14sp"
-                                android:textColor="#000000"
-                                android:fontFamily="@font/dmsans_variablefont_opsz"
-                                android:textStyle="bold"
-                                android:gravity="end"
-                                android:padding="10dp"
-                                android:background="@drawable/see_all_explore_bg"
-                                android:layout_alignParentRight="true"
-                                >
-
-                            </TextView>
-                        </RelativeLayout>
-
-
 
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginTop="24dp"
-                    >
-                    <RelativeLayout
+                    android:layout_marginBottom="24dp"
+                    android:orientation="horizontal">
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Studing"
-                            android:textSize="16sp"
-                            android:textColor="#FFFFFF"
-                            android:fontFamily="@font/dmsans_variablefont_opsz"
-                            android:textStyle="bold"
-                            android:gravity="start"
-                            android:paddingVertical="10dp"
-                            android:paddingHorizontal="15dp"
-                            android:background="@drawable/bg_about_learing_explore"
+                        android:background="@drawable/bg_about_learing_explore"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:gravity="start"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="Studying"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
 
-                            >
+                        android:textStyle="bold"
 
-                        </TextView>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
                         >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Recently video "
-                            android:textSize="16sp"
-                            android:textColor="#FFFFFF"
-                            android:fontFamily="@font/dmsans_variablefont_opsz"
-                            android:textStyle="bold"
-                            android:gravity="start"
-                            android:paddingTop="10dp"
-                            android:paddingRight="20dp"
-                            android:paddingLeft="20dp"
-                            android:paddingBottom="10dp"
-                            android:background="@drawable/bg_about_learing_explore_unactive"
 
-                            >
+                    </TextView>
 
-                        </TextView>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Your courses"
-                            android:textSize="16sp"
-                            android:textColor="#FFFFFF"
-                            android:fontFamily="@font/dmsans_variablefont_opsz"
-                            android:textStyle="bold"
-                            android:gravity="start"
-                            android:paddingVertical="10dp"
-                            android:paddingHorizontal="15dp"
-                            android:background="@drawable/bg_about_learing_explore_unactive"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_about_learing_explore_unactive"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:gravity="start"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="Recently video "
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
 
-                            >
+                    </TextView>
 
-                        </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_about_learing_explore_unactive"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:gravity="start"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="Your courses"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
 
-                    </RelativeLayout>
+                    </TextView>
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -2074,33 +1744,36 @@
                 android:layout_marginBottom="30dp">
 
             </View>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                >
+                android:paddingRight="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Top Video"
-                                android:textSize="24dp"
-                                android:textColor="#FFFFFF"
                                 android:fontFamily="@font/dmsans_variablefont_opsz"
+                                android:text="Top Video"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24dp"
                                 android:textStyle="bold">
 
                             </TextView>
@@ -2108,128 +1781,81 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Time to level up your playing skills."
-                                android:textSize="16sp"
-                                android:textColor="#80FFFFFF"
                                 android:fontFamily="@font/dmsans_variablefont_opsz"
-                                >
+                                android:text="Time to level up your playing skills."
+                                android:textColor="#80FFFFFF"
+                                android:textSize="16sp">
 
                             </TextView>
                         </LinearLayout>
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="See all"
-                                android:textSize="14sp"
-                                android:textColor="#000000"
-                                android:fontFamily="@font/dmsans_variablefont_opsz"
-                                android:textStyle="bold"
-                                android:gravity="end"
-                                android:padding="10dp"
-                                android:background="@drawable/see_all_explore_bg"
-                                android:layout_alignParentRight="true"
-                                >
-
-                            </TextView>
-                        </RelativeLayout>
-
-
-
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginTop="24dp"
-                    >
-                    <RelativeLayout
+                    android:layout_marginBottom="24dp"
+                    android:orientation="horizontal">
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Studing"
-                            android:textSize="16sp"
-                            android:textColor="#FFFFFF"
-                            android:fontFamily="@font/dmsans_variablefont_opsz"
-                            android:textStyle="bold"
-                            android:gravity="start"
-                            android:paddingVertical="10dp"
-                            android:paddingHorizontal="15dp"
-                            android:background="@drawable/bg_about_learing_explore"
+                        android:background="@drawable/bg_about_learing_explore"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:gravity="start"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="Studying"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
 
-                            >
+                        android:textStyle="bold"
 
-                        </TextView>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
                         >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Recently video "
-                            android:textSize="16sp"
-                            android:textColor="#FFFFFF"
-                            android:fontFamily="@font/dmsans_variablefont_opsz"
-                            android:textStyle="bold"
-                            android:gravity="start"
-                            android:paddingVertical="10dp"
-                            android:paddingHorizontal="15dp"
-                            android:background="@drawable/bg_about_learing_explore_unactive"
 
-                            >
+                    </TextView>
 
-                        </TextView>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Your courses"
-                            android:textSize="16sp"
-                            android:textColor="#FFFFFF"
-                            android:fontFamily="@font/dmsans_variablefont_opsz"
-                            android:textStyle="bold"
-                            android:gravity="start"
-                            android:paddingVertical="10dp"
-                            android:paddingHorizontal="15dp"
-                            android:background="@drawable/bg_about_learing_explore_unactive"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_about_learing_explore_unactive"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:gravity="start"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="Recently video "
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
 
-                            >
+                    </TextView>
 
-                        </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_about_learing_explore_unactive"
+                        android:fontFamily="@font/dmsans_variablefont_opsz"
+                        android:gravity="start"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="Your courses"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
 
-                    </RelativeLayout>
+                    </TextView>
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="24dp">
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -2240,11 +1866,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="0">
+
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/star_gold"
-                                android:layout_centerInParent="true">
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/star_gold">
 
                             </ImageView>
 
@@ -2261,40 +1888,41 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
-                                android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
                                 android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
-                                />
+                                android:background="@drawable/border_radius_for_lesson" />
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_weight="1">
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                                    android:paddingTop="9dp"
                                     android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
+                                    android:textColor="#FFFFFF"
 
                                     android:textSize="18sp"
-                                    android:textColor="#FFFFFF"
-                                    android:textStyle="bold"
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:textStyle="bold">
 
                                 </TextView>
+
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal"
-                                    >
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
                                         android:layout_width="wrap_content"
@@ -2306,42 +1934,18 @@
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/add_explore"
-                                            android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
-
-                                        </ImageView>
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="12.3k"
-
-
-                                            >
-
-                                        </TextView>
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        >
-                                        <ImageView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:src="@drawable/play_explore"
                                             android:layout_gravity="center"
                                             android:layout_marginRight="5dp"
-                                            >
+                                            android:src="@drawable/add_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="12.3k"
+
+
                                             >
 
                                         </TextView>
@@ -2350,35 +1954,60 @@
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        >
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="horizontal">
+
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/heart_explore"
                                             android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/play_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="12.3k"
-                                            >
+                                            android:text="12.3k">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/heart_explore">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="12.3k">
 
                                         </TextView>
                                     </LinearLayout>
                                 </LinearLayout>
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    android:maxLines="2"
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
                                     android:ellipsize="end"
                                     android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:maxLines="2"
+                                    android:paddingTop="9dp"
+                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    android:textColor="#80FFFFFF"
+                                    android:textSize="12sp">
 
                                 </TextView>
                             </LinearLayout>
@@ -2386,14 +2015,13 @@
                     </LinearLayout>
 
 
-
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="24dp">
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -2404,11 +2032,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="0">
+
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/star_gold"
-                                android:layout_centerInParent="true">
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/star_gold">
 
                             </ImageView>
 
@@ -2425,40 +2054,41 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
-                                android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
                                 android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
-                                />
+                                android:background="@drawable/border_radius_for_lesson" />
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_weight="1">
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                                    android:paddingTop="9dp"
                                     android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
+                                    android:textColor="#FFFFFF"
 
                                     android:textSize="18sp"
-                                    android:textColor="#FFFFFF"
-                                    android:textStyle="bold"
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:textStyle="bold">
 
                                 </TextView>
+
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal"
-                                    >
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
                                         android:layout_width="wrap_content"
@@ -2470,42 +2100,18 @@
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/add_explore"
-                                            android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
-
-                                        </ImageView>
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="12.3k"
-
-
-                                            >
-
-                                        </TextView>
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        >
-                                        <ImageView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:src="@drawable/play_explore"
                                             android:layout_gravity="center"
                                             android:layout_marginRight="5dp"
-                                            >
+                                            android:src="@drawable/add_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="12.3k"
+
+
                                             >
 
                                         </TextView>
@@ -2514,35 +2120,60 @@
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        >
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="horizontal">
+
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/heart_explore"
                                             android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/play_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="12.3k"
-                                            >
+                                            android:text="12.3k">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/heart_explore">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="12.3k">
 
                                         </TextView>
                                     </LinearLayout>
                                 </LinearLayout>
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    android:maxLines="2"
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
                                     android:ellipsize="end"
                                     android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:maxLines="2"
+                                    android:paddingTop="9dp"
+                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    android:textColor="#80FFFFFF"
+                                    android:textSize="12sp">
 
                                 </TextView>
                             </LinearLayout>
@@ -2550,14 +2181,13 @@
                     </LinearLayout>
 
 
-
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="24dp">
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -2568,11 +2198,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="0">
+
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/star_gold"
-                                android:layout_centerInParent="true">
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/star_gold">
 
                             </ImageView>
 
@@ -2589,40 +2220,41 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
-                                android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
                                 android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
-                                />
+                                android:background="@drawable/border_radius_for_lesson" />
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_weight="1">
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                                    android:paddingTop="9dp"
                                     android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
+                                    android:textColor="#FFFFFF"
 
                                     android:textSize="18sp"
-                                    android:textColor="#FFFFFF"
-                                    android:textStyle="bold"
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:textStyle="bold">
 
                                 </TextView>
+
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal"
-                                    >
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
                                         android:layout_width="wrap_content"
@@ -2634,42 +2266,18 @@
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/add_explore"
-                                            android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
-
-                                        </ImageView>
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="12.3k"
-
-
-                                            >
-
-                                        </TextView>
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        >
-                                        <ImageView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:src="@drawable/play_explore"
                                             android:layout_gravity="center"
                                             android:layout_marginRight="5dp"
-                                            >
+                                            android:src="@drawable/add_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="12.3k"
+
+
                                             >
 
                                         </TextView>
@@ -2678,35 +2286,60 @@
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        >
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="horizontal">
+
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/heart_explore"
                                             android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/play_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="12.3k"
-                                            >
+                                            android:text="12.3k">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/heart_explore">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="12.3k">
 
                                         </TextView>
                                     </LinearLayout>
                                 </LinearLayout>
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    android:maxLines="2"
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
                                     android:ellipsize="end"
                                     android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:maxLines="2"
+                                    android:paddingTop="9dp"
+                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    android:textColor="#80FFFFFF"
+                                    android:textSize="12sp">
 
                                 </TextView>
                             </LinearLayout>
@@ -2714,14 +2347,13 @@
                     </LinearLayout>
 
 
-
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="24dp">
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -2732,11 +2364,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="0">
+
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/star_silver"
-                                android:layout_centerInParent="true">
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/star_silver">
 
                             </ImageView>
 
@@ -2753,40 +2386,41 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
-                                android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
                                 android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
-                                />
+                                android:background="@drawable/border_radius_for_lesson" />
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_weight="1">
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                                    android:paddingTop="9dp"
                                     android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
+                                    android:textColor="#FFFFFF"
 
                                     android:textSize="18sp"
-                                    android:textColor="#FFFFFF"
-                                    android:textStyle="bold"
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:textStyle="bold">
 
                                 </TextView>
+
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal"
-                                    >
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
                                         android:layout_width="wrap_content"
@@ -2798,41 +2432,18 @@
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/add_explore"
-                                            android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
-
-                                        </ImageView>
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="12.3k"
-
-
-                                            >
-
-                                        </TextView>
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        android:layout_marginHorizontal="10dp"
-                                        >
-                                        <ImageView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:src="@drawable/play_explore"
                                             android:layout_gravity="center"
                                             android:layout_marginRight="5dp"
-                                            >
+                                            android:src="@drawable/add_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="12.3k"
+
+
                                             >
 
                                         </TextView>
@@ -2841,35 +2452,59 @@
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        >
+                                        android:layout_marginHorizontal="10dp"
+                                        android:orientation="horizontal">
+
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/heart_explore"
                                             android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/play_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="12.3k"
-                                            >
+                                            android:text="12.3k">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/heart_explore">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="12.3k">
 
                                         </TextView>
                                     </LinearLayout>
                                 </LinearLayout>
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    android:maxLines="2"
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
                                     android:ellipsize="end"
                                     android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:maxLines="2"
+                                    android:paddingTop="9dp"
+                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    android:textColor="#80FFFFFF"
+                                    android:textSize="12sp">
 
                                 </TextView>
                             </LinearLayout>
@@ -2877,14 +2512,13 @@
                     </LinearLayout>
 
 
-
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="24dp">
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -2895,11 +2529,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="0">
+
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/star_silver"
-                                android:layout_centerInParent="true">
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/star_silver">
 
                             </ImageView>
 
@@ -2916,40 +2551,41 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
-                                android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
                                 android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
-                                />
+                                android:background="@drawable/border_radius_for_lesson" />
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_weight="1">
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                                    android:paddingTop="9dp"
                                     android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
+                                    android:textColor="#FFFFFF"
 
                                     android:textSize="18sp"
-                                    android:textColor="#FFFFFF"
-                                    android:textStyle="bold"
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:textStyle="bold">
 
                                 </TextView>
+
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal"
-                                    >
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
                                         android:layout_width="wrap_content"
@@ -2961,42 +2597,18 @@
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/add_explore"
-                                            android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
-
-                                        </ImageView>
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="12.3k"
-
-
-                                            >
-
-                                        </TextView>
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        >
-                                        <ImageView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:src="@drawable/play_explore"
                                             android:layout_gravity="center"
                                             android:layout_marginRight="5dp"
-                                            >
+                                            android:src="@drawable/add_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="12.3k"
+
+
                                             >
 
                                         </TextView>
@@ -3005,35 +2617,60 @@
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        >
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="horizontal">
+
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/heart_explore"
                                             android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/play_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="12.3k"
-                                            >
+                                            android:text="12.3k">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/heart_explore">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="12.3k">
 
                                         </TextView>
                                     </LinearLayout>
                                 </LinearLayout>
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    android:maxLines="2"
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
                                     android:ellipsize="end"
                                     android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:maxLines="2"
+                                    android:paddingTop="9dp"
+                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    android:textColor="#80FFFFFF"
+                                    android:textSize="12sp">
 
                                 </TextView>
                             </LinearLayout>
@@ -3041,14 +2678,13 @@
                     </LinearLayout>
 
 
-
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="24dp">
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -3059,11 +2695,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="0">
+
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/star_silver"
-                                android:layout_centerInParent="true">
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/star_silver">
 
                             </ImageView>
 
@@ -3080,40 +2717,41 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
-                                android:background="@drawable/border_radius_for_lesson"
                                 android:layout_alignParentLeft="true"
                                 android:layout_marginHorizontal="10dp"
                                 android:layout_weight="0"
-                                />
+                                android:background="@drawable/border_radius_for_lesson" />
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_weight="1">
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                     android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
+                                    android:fontFamily="@font/dmsans_variablefont_opsz"
+
+                                    android:paddingTop="9dp"
+                                    android:text="Lorem Ipsum Dolor Sit Amet Consectetur"
+                                    android:textColor="#FFFFFF"
 
                                     android:textSize="18sp"
-                                    android:textColor="#FFFFFF"
-                                    android:textStyle="bold"
-
-                                    android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:textStyle="bold">
 
                                 </TextView>
+
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal"
-                                    >
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
                                         android:layout_width="wrap_content"
@@ -3125,42 +2763,18 @@
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/add_explore"
-                                            android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
-
-                                        </ImageView>
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="12.3k"
-
-
-                                            >
-
-                                        </TextView>
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
-                                        >
-                                        <ImageView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:src="@drawable/play_explore"
                                             android:layout_gravity="center"
                                             android:layout_marginRight="5dp"
-                                            >
+                                            android:src="@drawable/add_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="12.3k"
+
+
                                             >
 
                                         </TextView>
@@ -3169,35 +2783,60 @@
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal"
-                                        >
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:orientation="horizontal">
+
                                         <ImageView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/heart_explore"
                                             android:layout_gravity="center"
-                                            android:layout_marginRight="5dp">
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/play_explore">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="12.3k"
-                                            >
+                                            android:text="12.3k">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/heart_explore">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="12.3k">
 
                                         </TextView>
                                     </LinearLayout>
                                 </LinearLayout>
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    android:maxLines="2"
-                                    android:textSize="12sp"
-                                    android:textColor="#80FFFFFF"
                                     android:ellipsize="end"
                                     android:fontFamily="@font/dmsans_variablefont_opsz"
-                                    android:paddingTop="9dp">
+                                    android:maxLines="2"
+                                    android:paddingTop="9dp"
+                                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    android:textColor="#80FFFFFF"
+                                    android:textSize="12sp">
 
                                 </TextView>
                             </LinearLayout>
@@ -3205,10 +2844,7 @@
                     </LinearLayout>
 
 
-
-
                 </LinearLayout>
-
 
 
             </LinearLayout>
