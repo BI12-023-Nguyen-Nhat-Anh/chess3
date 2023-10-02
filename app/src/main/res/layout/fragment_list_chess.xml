@@ -72,8 +72,8 @@
             <ImageView
                 android:layout_width="172dp"
                 android:layout_height="245dp"
-                android:src="@drawable/tuongg"
-                android:id="@+id/bishopbutton"
+                android:src="@drawable/xee"
+                android:id="@+id/rookbutton"
                 android:layout_marginTop="28dp"
                 android:layout_marginLeft="200dp"/>
 
@@ -88,8 +88,8 @@
             <ImageView
                 android:layout_width="172dp"
                 android:layout_height="246dp"
-                android:src="@drawable/xee"
-                android:id="@+id/rookbutton"
+                android:src="@drawable/tuongg"
+                android:id="@+id/bishopbutton"
                 android:layout_marginTop="298dp"
                 android:layout_marginLeft="200dp"/>
 
