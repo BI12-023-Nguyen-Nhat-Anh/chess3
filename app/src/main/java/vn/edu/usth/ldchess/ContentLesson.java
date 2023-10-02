@@ -3,12 +3,14 @@ package vn.edu.usth.ldchess;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -18,6 +20,7 @@ import java.util.HashMap;
  */
 public class ContentLesson extends Fragment {
     private int position;
+    private HashMap<Integer, Object[]> lesson;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -57,20 +60,16 @@ public class ContentLesson extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        list_content();
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_content_lesson, container, false);
+    public void list_content() {
+        lesson=new HashMap<>();
 
-        HashMap<Integer, Object[]> lesson=new HashMap<>();
-        final int[] current={position};
         String[] title={
                 "Introduce: History of Chess",
                 "Lesson 1: Pawn. Promote Pawn. Capture en passant",
@@ -136,9 +135,22 @@ public class ContentLesson extends Fragment {
             Object[] array={title[i],content[i]};
             lesson.put(i,array);
         }
+    }
+
+    public void setContentLesson(int num){
+        this.position=num;
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view=inflater.inflate(R.layout.fragment_content_lesson, container, false);
+
         TextView ls_title=view.findViewById(R.id.ls_title);
         TextView ls_content=view.findViewById(R.id.ls_content);
-        Object[] item = lesson.get(current);
+
+        Object[] item = lesson.get(position);
         ls_title.setText((String)item[0]);
         ls_content.setText((String)item[1]);
 
@@ -146,22 +158,10 @@ public class ContentLesson extends Fragment {
         return view;
 
     }
-    public void setContentLesson(int num){
-        this.position=num;
+
+    public void onBackPressed() {
+        List_Lesson list_lesson = new List_Lesson();
+        FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.main,list_lesson).commit();
     }
-
-//    private void bindLessonContent(View view, Object[] objects) {
-//        TextView ls_title=view.findViewById(R.id.ls_title);
-//        TextView ls_content=view.findViewById(R.id.ls_content);
-//        Bundle args = getArguments();
-//        if (args != null) {
-//            String title = args.getString(ARG_PARAM1);
-//            String content = args.getString(ARG_PARAM1);
-//            ls_title.setText(title);
-//            ls_content.setText(content);
-//        }
-//    }
-
-
-
 }

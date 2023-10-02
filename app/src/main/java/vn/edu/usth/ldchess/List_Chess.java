@@ -124,9 +124,9 @@ public class List_Chess extends Fragment {
         FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.main, chess_man, "Chess main")
                 .commit();
-        chess_click();
+        hide_fragment();
     }
-    public void chess_click(){
+    public void hide_fragment(){
         View rootView = getActivity().getWindow().getDecorView().findViewById(android.R.id.content);
         ScrollView list_chess = rootView.findViewById(R.id.list_chess);
         list_chess.setVisibility(View.INVISIBLE);

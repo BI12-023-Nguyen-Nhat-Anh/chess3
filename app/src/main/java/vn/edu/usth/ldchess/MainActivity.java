@@ -137,6 +137,10 @@ public class MainActivity extends AppCompatActivity {
             ChessManFragment ChessMan = (ChessManFragment) currentFragment;
             ChessMan.onBackPressed();
         }
+        else if(currentFragment instanceof ContentLesson){
+            ContentLesson contentLesson = (ContentLesson) currentFragment;
+            contentLesson.onBackPressed();
+        }
         else {
             super.onBackPressed();
         }

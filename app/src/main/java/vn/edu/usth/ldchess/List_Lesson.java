@@ -124,11 +124,11 @@ public class List_Lesson extends Fragment {
         FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.main, contentLesson, "Content Lesson")
                 .commit();
-        lesson_click();
+        hide_fragment();
     }
-    public void lesson_click(){
+    public void hide_fragment(){
         View rootView = getActivity().getWindow().getDecorView().findViewById(android.R.id.content);
-        ScrollView list_chess = rootView.findViewById(R.id.list_lesson);
+        LinearLayout list_chess = rootView.findViewById(R.id.list_lesson);
         list_chess.setVisibility(View.INVISIBLE);
     }
 
