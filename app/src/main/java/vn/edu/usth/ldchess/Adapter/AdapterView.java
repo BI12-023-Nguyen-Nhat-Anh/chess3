@@ -7,7 +7,6 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import vn.edu.usth.ldchess.HeaderProfileFragment;
 import vn.edu.usth.ldchess.Home_Explore_Content;
-import vn.edu.usth.ldchess.Lesson_0;
 import vn.edu.usth.ldchess.List_Chess;
 import vn.edu.usth.ldchess.List_Lesson;
 import vn.edu.usth.ldchess.exploreFragment;

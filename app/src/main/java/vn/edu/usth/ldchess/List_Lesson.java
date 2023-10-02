@@ -74,67 +74,64 @@ public class List_Lesson extends Fragment {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Header_Navbar_Lesson1 history=new Header_Navbar_Lesson1();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, history, "History of chess")
-                        .addToBackStack(null).commit();
-                View rootView = getActivity().getWindow().getDecorView().findViewById(android.R.id.content);
-                LinearLayout list_lesson = rootView.findViewById(R.id.list_lesson);
-                list_lesson.setVisibility(View.INVISIBLE);
+                ChangeFragment(0);
             }
         });
 
         lesson_one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Header_Navbar_Lesson2 lesson1=new Header_Navbar_Lesson2();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, lesson1, "Lesson 1")
-                        .addToBackStack(null).commit();
+                ChangeFragment(1);
             }
         });
 
         lesson_two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Header_Navbar_Lesson3 lesson2=new Header_Navbar_Lesson3();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, lesson2, "Lesson 2")
-                        .addToBackStack(null).commit();
+                ChangeFragment(2);
             }
         });
 
         lesson_three.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Header_Navbar_Lesson4 lesson3=new Header_Navbar_Lesson4();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, lesson3, "Lesson 3")
-                        .addToBackStack(null).commit();
+                ChangeFragment(3);
             }
         });
 
         lesson_four.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Header_Navbar_Lesson5 lesson4=new Header_Navbar_Lesson5();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, lesson4, "Lesson 4")
-                        .addToBackStack(null).commit();
+                ChangeFragment(4);
             }
         });
 
         lesson_five.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Header_Navbar_Lesson6 lesson5=new Header_Navbar_Lesson6();
-                FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.main, lesson5, "Lesson 5")
-                        .addToBackStack(null).commit();
+                ChangeFragment(5);
             }
         });
+
+
+
         return  view;
     }
+
+    public void ChangeFragment(int num){
+        ContentLesson contentLesson=new ContentLesson();
+        contentLesson.setContentLesson(num);
+        FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.main, contentLesson, "Content Lesson")
+                .commit();
+        lesson_click();
+    }
+    public void lesson_click(){
+        View rootView = getActivity().getWindow().getDecorView().findViewById(android.R.id.content);
+        ScrollView list_chess = rootView.findViewById(R.id.list_lesson);
+        list_chess.setVisibility(View.INVISIBLE);
+    }
+
     public void onBackPressed() {
         startActivity(new Intent(getActivity(), MainActivity.class));
     }

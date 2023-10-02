@@ -17,7 +17,7 @@ import java.util.HashMap;
  * create an instance of this fragment.
  */
 public class ContentLesson extends Fragment {
-
+    private int position;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -70,7 +70,7 @@ public class ContentLesson extends Fragment {
         View view=inflater.inflate(R.layout.fragment_content_lesson, container, false);
 
         HashMap<Integer, Object[]> lesson=new HashMap<>();
-
+        final int[] current={position};
         String[] title={
                 "Introduce: History of Chess",
                 "Lesson 1: Pawn. Promote Pawn. Capture en passant",
@@ -138,7 +138,7 @@ public class ContentLesson extends Fragment {
         }
         TextView ls_title=view.findViewById(R.id.ls_title);
         TextView ls_content=view.findViewById(R.id.ls_content);
-        Object[] item = lesson.get(0);
+        Object[] item = lesson.get(current);
         ls_title.setText((String)item[0]);
         ls_content.setText((String)item[1]);
 
@@ -146,17 +146,21 @@ public class ContentLesson extends Fragment {
         return view;
 
     }
-    private void bindLessonContent(View view, Object[] objects) {
-        TextView ls_title=view.findViewById(R.id.ls_title);
-        TextView ls_content=view.findViewById(R.id.ls_content);
-        Bundle args = getArguments();
-        if (args != null) {
-            String title = args.getString(ARG_PARAM1);
-            String content = args.getString(ARG_PARAM1);
-            ls_title.setText(title);
-            ls_content.setText(content);
-        }
+    public void setContentLesson(int num){
+        this.position=num;
     }
+
+//    private void bindLessonContent(View view, Object[] objects) {
+//        TextView ls_title=view.findViewById(R.id.ls_title);
+//        TextView ls_content=view.findViewById(R.id.ls_content);
+//        Bundle args = getArguments();
+//        if (args != null) {
+//            String title = args.getString(ARG_PARAM1);
+//            String content = args.getString(ARG_PARAM1);
+//            ls_title.setText(title);
+//            ls_content.setText(content);
+//        }
+//    }
 
 
 
