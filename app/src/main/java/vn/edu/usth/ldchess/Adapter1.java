@@ -17,7 +17,7 @@ public class Adapter1 extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position){
             case 0:
-                return new Content1();
+                return new ContentLesson();
             case 1:
                 return new Disscustionn();
         }
