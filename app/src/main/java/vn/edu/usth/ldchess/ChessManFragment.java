@@ -28,10 +28,10 @@ public class ChessManFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 
-//    Create a variable to take input from the user when they choose chess
+    //    Create a variable to take input from the user when they choose chess
     private int position;
 
-//    Create a hashmap to contain array of the chess
+    //    Create a hashmap to contain array of the chess
     private HashMap<Integer, Object[]> chess;
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -74,7 +74,7 @@ public class ChessManFragment extends Fragment {
         }
     }
 
-//    Load the elements from the array chess into hashmap
+    //    Load the elements from the array chess into hashmap
     public void list_item(){
         chess=new HashMap<>();
 
@@ -112,7 +112,7 @@ public class ChessManFragment extends Fragment {
         }
     }
 
-//    Take the value from the user when they choose which chess they want to see
+    //    Take the value from the user when they choose which chess they want to see
     public void setChessPiece(int num){
         this.position=num;
     }
@@ -120,9 +120,6 @@ public class ChessManFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-//        Take the input to show the chess that they want to see
-        final int[] current={position};
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_chess_man, container, false);
 
@@ -134,30 +131,18 @@ public class ChessManFragment extends Fragment {
         TextView detail_chess=view.findViewById(R.id.detail);
 
 //        Take the array from the hashmap at position
-        Object[] item=chess.get(position);
-        previous_chess.setImageResource((int)item[0]);
-        active_chess.setImageResource((int)item[1]);
-        next_chess.setImageResource((int)item[2]);
-        title_chess.setText((String)item[3]);
-        detail_chess.setText((String)item[4]);
+        setContent(active_chess,previous_chess,next_chess,title_chess,detail_chess);
 
 //        Change to next chess when user click
         next_chess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                current[0]++;
-
-//                If the current chess is the last chess so we will reset the position to the first chess
-                if(current[0]>=item.length){
-                    current[0]=0;
+                position++;
+//                If the position chess is the last chess so we will reset the position to the first chess
+                if(position>=6){
+                    position=0;
                 }
-
-                Object[] item=chess.get(current[0]);
-                previous_chess.setImageResource((int)item[0]);
-                active_chess.setImageResource((int)item[1]);
-                next_chess.setImageResource((int)item[2]);
-                title_chess.setText((String)item[3]);
-                detail_chess.setText((String)item[4]);
+                setContent(active_chess,previous_chess,next_chess,title_chess,detail_chess);
             }
         });
 
@@ -165,22 +150,27 @@ public class ChessManFragment extends Fragment {
         previous_chess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                current[0]--;
-
-//                If current chess is the first chess so we will reset the position to the last chess
-                if(current[0]<0) {
-                    current[0]=item.length-1;
+                position--;
+//                If position chess is the first chess so we will reset the position to the last chess
+                if(position<0) {
+                    position=5;
                 }
-
-                Object[] item = chess.get(current[0]);
-                previous_chess.setImageResource((int) item[0]);
-                active_chess.setImageResource((int) item[1]);
-                next_chess.setImageResource((int) item[2]);
-                title_chess.setText((String) item[3]);
-                detail_chess.setText((String) item[4]);
+                setContent(active_chess,previous_chess,next_chess,title_chess,detail_chess);
             }
         });
         return view;
+    }
+
+//    Create function setContent to reuse everytime user change fragment without code those thing again
+    public void setContent(ImageView active_chess, ImageView previous_chess,
+                           ImageView next_chess, TextView title_chess,
+                           TextView detail_chess){
+        Object[] item=chess.get(position);
+        previous_chess.setImageResource((int)item[0]);
+        active_chess.setImageResource((int)item[1]);
+        next_chess.setImageResource((int)item[2]);
+        title_chess.setText((String)item[3]);
+        detail_chess.setText((String)item[4]);
     }
 
     public void onBackPressed() {

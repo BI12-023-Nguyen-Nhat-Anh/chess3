@@ -8,7 +8,10 @@ import androidx.fragment.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -147,18 +150,71 @@ public class ContentLesson extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_content_lesson, container, false);
 
+        LinearLayout intro=view.findViewById(R.id.intro);
+        LinearLayout lesson1=view.findViewById(R.id.lesson1);
+        LinearLayout lesson2=view.findViewById(R.id.lesson2);
+        LinearLayout lesson3=view.findViewById(R.id.lesson3);
+        LinearLayout lesson4=view.findViewById(R.id.lesson4);
+        LinearLayout lesson5=view.findViewById(R.id.lesson5);
+
         TextView ls_title=view.findViewById(R.id.ls_title);
         TextView ls_content=view.findViewById(R.id.ls_content);
 
+        setContent(ls_title, ls_content);
+
+        intro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                position=0;
+                setContent(ls_title, ls_content);
+            }
+        });
+
+        lesson1.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                position=1;
+                setContent(ls_title, ls_content);
+            }
+        }));
+        lesson2.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                position=2;
+                setContent(ls_title, ls_content);
+            }
+        }));
+        lesson3.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                position=3;
+                setContent(ls_title, ls_content);
+            }
+        }));
+        lesson4.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                position=4;
+                setContent(ls_title, ls_content);
+            }
+        }));
+        lesson5.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                position=5;
+                setContent(ls_title, ls_content);
+            }
+        }));
+
+        return view;
+    }
+
+//    Create setContent function to reuse everytime user change lesson
+    public void setContent(TextView ls_title, TextView ls_content){
         Object[] item = lesson.get(position);
         ls_title.setText((String)item[0]);
         ls_content.setText((String)item[1]);
-
-
-        return view;
-
     }
-
     public void onBackPressed() {
         List_Lesson list_lesson = new List_Lesson();
         FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
