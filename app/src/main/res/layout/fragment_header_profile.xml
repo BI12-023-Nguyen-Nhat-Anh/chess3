@@ -10,144 +10,6 @@
     android:id="@+id/nanh_profile">
 
     <!-- TODO: Update blank fragment layout -->
-<!--    <ScrollView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_margin="20dp">-->
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:orientation="vertical">-->
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="My Profile"-->
-<!--                android:textColor="@color/white"-->
-<!--                android:textSize="50dp"-->
-<!--                android:textStyle="bold"-->
-<!--                android:paddingBottom="30dp"/>-->
-
-<!--            &lt;!&ndash;            Avatar and basic information of the user&ndash;&gt;-->
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:gravity="center_vertical"-->
-<!--                android:layout_marginBottom="20dp">-->
-<!--                &lt;!&ndash;                Library to make avatar circle&ndash;&gt;-->
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    app:cardCornerRadius="100dp"-->
-<!--                    android:layout_marginRight="15dp">-->
-<!--                    <ImageView-->
-<!--                        android:layout_width="100dp"-->
-<!--                        android:layout_height="100dp"-->
-<!--                        android:src="@drawable/avatar"/>-->
-<!--                </androidx.cardview.widget.CardView>-->
-
-<!--                &lt;!&ndash;                Separate 2 lines of text&ndash;&gt;-->
-<!--                <LinearLayout-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="vertical">-->
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Nguyễn Nhật Anh"-->
-<!--                        android:textColor="@color/white"-->
-<!--                        android:textSize="25dp"/>-->
-
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Advanced - Build Skills"/>-->
-<!--                </LinearLayout>-->
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="horizontal">-->
-
-<!--                <RelativeLayout-->
-<!--                    android:layout_width="123dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    >-->
-<!--                    <TextView-->
-<!--                        android:id="@+id/challenges"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="0"-->
-<!--                        android:textSize="20dp"-->
-<!--                        android:layout_centerHorizontal="true"/>-->
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Challenges"-->
-<!--                        android:layout_below="@id/challenges"-->
-<!--                        android:layout_centerHorizontal="true"/>-->
-<!--                </RelativeLayout>-->
-
-<!--                <RelativeLayout-->
-<!--                    android:layout_width="123dp"-->
-<!--                    android:layout_height="wrap_content">-->
-<!--                    <TextView-->
-<!--                        android:id="@+id/followers"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="0"-->
-<!--                        android:layout_centerHorizontal="true"-->
-<!--                        android:textSize="20dp"/>-->
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Followers"-->
-<!--                        android:layout_below="@id/followers"-->
-<!--                        android:layout_centerHorizontal="true"/>-->
-<!--                </RelativeLayout>-->
-
-<!--                <RelativeLayout-->
-<!--                    android:layout_width="123dp"-->
-<!--                    android:layout_height="wrap_content">-->
-<!--                    <TextView-->
-<!--                        android:id="@+id/following"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="0"-->
-<!--                        android:textSize="20dp"-->
-<!--                        android:layout_centerHorizontal="true"/>-->
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Following"-->
-<!--                        android:layout_below="@id/following"-->
-<!--                        android:layout_centerHorizontal="true"/>-->
-<!--                </RelativeLayout>-->
-<!--            </LinearLayout>-->
-
-<!--            <com.google.android.material.tabs.TabLayout-->
-<!--                android:id="@+id/tab_layout"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                app:tabMode="fixed"-->
-<!--                app:tabGravity="fill"-->
-<!--                app:tabIndicatorGravity="stretch"-->
-<!--                app:tabSelectedTextColor="@color/white"-->
-<!--                app:tabIndicatorAnimationMode="elastic"-->
-<!--                app:tabIndicator="@drawable/tab_indicator">-->
-
-<!--            </com.google.android.material.tabs.TabLayout>-->
-<!--            <androidx.viewpager2.widget.ViewPager2-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:id="@+id/viewpager">-->
-
-<!--            </androidx.viewpager2.widget.ViewPager2>-->
-
-<!--        </LinearLayout>-->
-<!--    </ScrollView-->>-->
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -174,6 +36,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_below="@id/my_profile">
                 <ImageView
+                    android:id="@+id/img"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/avatar"
@@ -191,7 +54,7 @@
                 android:layout_marginLeft="27dp"
                 android:layout_marginTop="21dp"
                 android:layout_toRightOf="@id/image"
-                android:text="Nguyễn Nhật Anh"
+                android:text="Text"
                 android:textColor="@color/white"
                 android:textSize="25dp" />
 
