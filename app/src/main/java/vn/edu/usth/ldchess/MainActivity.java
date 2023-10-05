@@ -6,20 +6,27 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.navigation.NavigationBarView;
 
 import vn.edu.usth.ldchess.Adapter.AdapterView;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG="Main Activity";
     ViewPager2 viewpager ;
     AdapterView adapterView;
     BottomNavigationView nav_bottom;
+    private static final String TAG="Main Activity";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,34 +91,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.i(TAG, "onPause: This is a log message.");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.i(TAG, "onDestroy: This is a log message.");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i(TAG, "onResume: This is a log message.");
-    }
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.i(TAG, "onStart: This is a log message.");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.i(TAG, "onStop: This is a log message.");
-    }
 
     @Override
     public void onBackPressed() {
@@ -145,4 +124,35 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
         }
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i(TAG, "onPause: This is a log message.");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i(TAG, "onDestroy: This is a log message.");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(TAG, "onResume: This is a log message.");
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i(TAG, "onStart: This is a log message.");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i(TAG, "onStop: This is a log message.");
+    }
+
+
+
 }

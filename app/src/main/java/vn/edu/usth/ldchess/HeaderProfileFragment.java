@@ -1,5 +1,7 @@
 package vn.edu.usth.ldchess;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -10,8 +12,19 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.material.tabs.TabLayout;
+import com.squareup.picasso.Picasso;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import vn.edu.usth.ldchess.Adapter.AdapterProfile;
 
@@ -100,6 +113,42 @@ public class HeaderProfileFragment extends Fragment {
                 tabLayout.selectTab(tabLayout.getTabAt(position));
             }
         });
+        ShareData shareData = ShareData.getInstance();
+        String sharedString = shareData.getSharedString();
+        TextView text = view.findViewById(R.id.name_profile);
+        ImageView imageView = view.findViewById(R.id.img);
+//        TextView follow = view.findViewById(R.id.followers);
+
+
+        String url = "https://api.chess.com/pub/player/"+sharedString;
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+
+                    String name = response.getString("name");
+//                    String username = response.getString("username");
+                    int follower = response.getInt("followers");
+                    String avatar = response.getString("avatar");
+
+                    Picasso.get().load(avatar).into(imageView);
+
+                    text.setText(name);
+
+//                    follow.setText(follower);
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                text.setText("error");
+            }
+        });
+
+        RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
+        requestQueue.add(jsonObjectRequest);
         return view;
     }
 
