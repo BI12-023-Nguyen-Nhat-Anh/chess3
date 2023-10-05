@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -28,10 +29,11 @@ public class Homepage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
 
-        String[] name = {"cautraicuong","Nanhmuaxuan","clownlord","StupidDdog","tibeo07"};
+        String[] name = {"cautraicuong","Nanhmuaxuan","Cl0wnLord","StupidDdog","tibeo07"};
         EditText username = findViewById(R.id.username);
         EditText password = findViewById(R.id.password);
         MaterialButton btn = findViewById(R.id.btn);
+        TextView forgot = findViewById(R.id.forgot_password);
 
         String ExitString = "";
         btn.setOnClickListener(new View.OnClickListener() {
@@ -44,11 +46,9 @@ public class Homepage extends AppCompatActivity {
                 shareData.setSharedString(result);
                 for(int i = 0; i< name.length; i++){
                     if(username.getText().toString().equals(name[i]) &&  password.getText().toString().equals("admin") ){
-                        Toast.makeText(Homepage.this, "LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show();
+
                         Intent intent = new Intent(Homepage.this, MainActivity.class);
                         startActivity(intent);
-                    }else {
-                        Toast.makeText(Homepage.this, "WRONG PASSWORD", Toast.LENGTH_SHORT).show();
                     }
 
 
