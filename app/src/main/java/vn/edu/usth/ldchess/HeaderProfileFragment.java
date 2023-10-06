@@ -2,7 +2,9 @@ package vn.edu.usth.ldchess;
 
 import static android.content.ContentValues.TAG;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -18,6 +20,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -90,7 +94,8 @@ public class HeaderProfileFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_header_profile, container, false);
         TabLayout tabLayout = view.findViewById(R.id.tab_layout);
         ViewPager2 viewPager2 = view.findViewById(R.id.viewpager);
-        Button logout = view.findViewById(R.id.log_out);
+        ImageView navbar=view.findViewById(R.id.navbar);
+
 
         tabLayout.addTab(tabLayout.newTab().setText("Analytic"));
         tabLayout.addTab(tabLayout.newTab().setText("Save"));
@@ -125,8 +130,7 @@ public class HeaderProfileFragment extends Fragment {
         ShareData shareData = ShareData.getInstance();
         String sharedString = shareData.getSharedString();
         TextView text = view.findViewById(R.id.name_profile);
-        ImageView imageView = view.findViewById(R.id.img);
-        TextView follow = view.findViewById(R.id.followers);
+        ImageView imageView = view.findViewById(R.id.img);        TextView follow = view.findViewById(R.id.followers);
 
 
         String url = "https://api.chess.com/pub/player/"+sharedString;
@@ -157,12 +161,48 @@ public class HeaderProfileFragment extends Fragment {
             }
         });
 
+        navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                popup();
+            }
+        });
+
         RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
         requestQueue.add(jsonObjectRequest);
 
         return view;
     }
 
+    public void popup(){
+        Dialog popup=new Dialog(requireContext());
+        popup.setContentView(R.layout.logout);
+
+        Window window=popup.getWindow();
+        window.setLayout(WindowManager.LayoutParams.WRAP_CONTENT, WindowManager.LayoutParams.WRAP_CONTENT);
+
+        popup.show();
+
+        Button yes=popup.findViewById(R.id.btn_accept);
+        Button no=popup.findViewById(R.id.btn_decline);
+        no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                closePopup(popup);
+            }
+        });
+
+        yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), Homepage.class));
+            }
+        });
+    }
+
+    public void closePopup(Dialog popup){
+        popup.dismiss();
+    }
 
     public void onBackPressed() {
         startActivity(new Intent(getActivity(), MainActivity.class));
