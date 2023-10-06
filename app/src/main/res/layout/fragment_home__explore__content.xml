@@ -40,6 +40,7 @@
 
                     </ImageView>
                     <EditText
+                        android:id="@+id/search"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="What do you want to see ?"
@@ -54,6 +55,7 @@
                     </EditText>
                 </LinearLayout>
                 <ImageView
+                    android:id="@+id/find"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/navb"

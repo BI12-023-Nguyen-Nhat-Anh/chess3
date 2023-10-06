@@ -6,61 +6,42 @@
     tools:context=".AnalyticsFragment"
     android:background="@color/background">
 
-<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:orientation="vertical"-->
-<!--        android:layout_margin="20dp">-->
-
-<!--        &lt;!&ndash;        Detail about analytics&ndash;&gt;-->
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="vertical"-->
-<!--            android:layout_marginTop="20dp">-->
-<!--            <ImageView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:src="@drawable/progress"-->
-<!--                android:layout_marginBottom="20dp"/>-->
-
-<!--            &lt;!&ndash;            Detail abot Timeline&ndash;&gt;-->
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Timeline"-->
-<!--                android:layout_marginBottom="20dp"-->
-<!--                android:textColor="@color/white"-->
-<!--                android:textSize="20dp"-->
-<!--                android:textStyle="bold"/>-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="400dp">-->
-
-<!--            </LinearLayout>-->
-<!--        </LinearLayout>-->
-<!--    </LinearLayout>-->
-
-    <ImageView
-        android:id="@+id/image"
-        android:paddingTop="40dp"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/progress"
-        android:layout_marginBottom="20dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Timeline"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:layout_below="@+id/image"
-        android:textStyle="bold"/>
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/time_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Timeline"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Text"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@id/time_line">
+
+            </TextView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
 
 
 

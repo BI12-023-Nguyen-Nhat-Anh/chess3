@@ -78,25 +78,14 @@
     </com.google.android.material.button.MaterialButton>
 
     <TextView
-        android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn"
+        android:layout_above="@id/img_layout"
+        android:layout_below="@+id/btn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="Forgot password?"
-        android:textColor="#fff"
-        android:textSize="15dp"
-        tools:ignore="TextSizeCheck">
-
-    </TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="146dp"
         android:text="or sign in with"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/img_layout">
+        android:textStyle="bold">
 
     </TextView>
     <LinearLayout
