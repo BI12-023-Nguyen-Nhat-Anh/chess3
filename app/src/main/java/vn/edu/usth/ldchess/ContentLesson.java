@@ -9,12 +9,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.Scroller;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Scanner;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +26,7 @@ import java.util.HashMap;
  */
 public class ContentLesson extends Fragment {
     private int position;
+    private ScrollView scrollView;
     private HashMap<Integer, Object[]> lesson;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -160,6 +164,8 @@ public class ContentLesson extends Fragment {
         TextView ls_title=view.findViewById(R.id.ls_title);
         TextView ls_content=view.findViewById(R.id.ls_content);
 
+        scrollView=view.findViewById(R.id.tothetop);
+
         setContent(ls_title, ls_content);
 
         intro.setOnClickListener(new View.OnClickListener() {
@@ -214,5 +220,14 @@ public class ContentLesson extends Fragment {
         Object[] item = lesson.get(position);
         ls_title.setText((String)item[0]);
         ls_content.setText((String)item[1]);
+
+        if (scrollView != null) {
+            scrollView.post(new Runnable() {
+                @Override
+                public void run() {
+                    scrollView.smoothScrollTo(0, 0);
+                }
+            });
+        }
     }
 }
