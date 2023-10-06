@@ -1,44 +1,51 @@
-package vn.edu.usth.ldchess;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+
 import java.util.LinkedList;
-import  vn.edu.usth.ldchess.PlayChess;
+
 public class Piece {
-    int xp;
-    int yp;
+    private int x;
+    private int y;
+    private boolean isWhite;
+    private String type;
+    private LinkedList<Piece> pieces;
 
-    int x;
-    int y;
-    boolean isWhite;
-    LinkedList<Piece> ps;
-    String name;
-    public Piece(int xp, int yp, boolean isWhite,String n, LinkedList<Piece> ps) {
-        this.xp = xp;
-        this.yp = yp;
-
-        x = xp*64;
-        y = yp*64;
+    public Piece(int x, int y, boolean isWhite, String type, LinkedList<Piece> pieces) {
+        this.x = x;
+        this.y = y;
         this.isWhite = isWhite;
-        this.ps=ps;
-        name=n;
-        ps.add(this);
+        this.type = type;
+        this.pieces = pieces;
+        pieces.add(this);
     }
 
-    public void move(int xp,int yp){
-        if(ChessGame.getPiece(xp*64,yp*64)!=null){
-            if(ChessGame.getPiece(xp*64,yp*64).isWhite!=isWhite){
-                ChessGame.getPiece(xp*64,yp*64).kill();
-            }else{
-                x = this.xp*64;
-                y = this.yp*64;
-                return;
-            }
-
+    public void draw(Canvas canvas, Bitmap[][] imgs, int cellSize) {
+        int colorIndex = isWhite ? 1 : 0;
+        int pieceIndex = -1;
+        switch (type) {
+            case "rook":
+                pieceIndex = 0;
+                break;
+            case "knight":
+                pieceIndex = 1;
+                break;
+            case "bishop":
+                pieceIndex = 2;
+                break;
+            case "queen":
+                pieceIndex = 3;
+                break;
+            case "king":
+                pieceIndex = 4;
+                break;
+            case "pawn":
+                pieceIndex = 5;
+                break;
         }
-        this.xp=xp;
-        this.yp=yp;
-        x = xp*64;
-        y = yp*64;
-    }
-    public void kill(){
-        ps.remove(this);
+        if (pieceIndex != -1) {
+            int left = x * cellSize;
+            int top = y * cellSize;
+            canvas.drawBitmap(imgs[colorIndex][pieceIndex], left, top, null);
+        }
     }
 }
