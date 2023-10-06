@@ -5,15 +5,23 @@ import static android.content.ContentValues.TAG;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -82,6 +90,7 @@ public class HeaderProfileFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_header_profile, container, false);
         TabLayout tabLayout = view.findViewById(R.id.tab_layout);
         ViewPager2 viewPager2 = view.findViewById(R.id.viewpager);
+        Button logout = view.findViewById(R.id.log_out);
 
         tabLayout.addTab(tabLayout.newTab().setText("Analytic"));
         tabLayout.addTab(tabLayout.newTab().setText("Save"));
@@ -117,7 +126,7 @@ public class HeaderProfileFragment extends Fragment {
         String sharedString = shareData.getSharedString();
         TextView text = view.findViewById(R.id.name_profile);
         ImageView imageView = view.findViewById(R.id.img);
-//        TextView follow = view.findViewById(R.id.followers);
+        TextView follow = view.findViewById(R.id.followers);
 
 
         String url = "https://api.chess.com/pub/player/"+sharedString;
@@ -128,14 +137,15 @@ public class HeaderProfileFragment extends Fragment {
 
                     String name = response.getString("name");
 //                    String username = response.getString("username");
-                    int follower = response.getInt("followers");
+//                    int follower = response.getInt("followers");
                     String avatar = response.getString("avatar");
 
                     Picasso.get().load(avatar).into(imageView);
 
                     text.setText(name);
-
 //                    follow.setText(follower);
+
+
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
                 }
@@ -149,8 +159,10 @@ public class HeaderProfileFragment extends Fragment {
 
         RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
         requestQueue.add(jsonObjectRequest);
+
         return view;
     }
+
 
     public void onBackPressed() {
         startActivity(new Intent(getActivity(), MainActivity.class));
