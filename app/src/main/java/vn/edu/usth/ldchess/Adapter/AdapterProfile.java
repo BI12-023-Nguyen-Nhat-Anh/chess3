@@ -23,14 +23,13 @@ public class AdapterProfile extends FragmentStateAdapter {
                 return new AnalyticsFragment();
             case 1:
                 return new SaveFragment();
-            case 2:
-                return new CoursesFragment();
+
         }
         return null;
     }
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 2;
     }
 }

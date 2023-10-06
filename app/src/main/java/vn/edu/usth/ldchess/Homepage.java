@@ -29,11 +29,11 @@ public class Homepage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
 
-        String[] name = {"cautraicuong","Nanhmuaxuan","Cl0wnLord","StupidDdog","tibeo07"};
+        String[] name = {"cautraicuong","Nanhmuaxuan","Cl0wnLord","StupidDdog","tibeo07","Vuong236"};
         EditText username = findViewById(R.id.username);
         EditText password = findViewById(R.id.password);
         MaterialButton btn = findViewById(R.id.btn);
-        TextView forgot = findViewById(R.id.forgot_password);
+
 
         String ExitString = "";
         btn.setOnClickListener(new View.OnClickListener() {

@@ -5,9 +5,25 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -60,7 +76,53 @@ public class SaveFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_save, container, false);
+        View view = inflater.inflate(R.layout.fragment_save, container, false);
+        ShareData shareData = ShareData.getInstance();
+        String sharedString = shareData.getSharedString();
+        TextView text = view.findViewById(R.id.text);
+
+        text.setMovementMethod(LinkMovementMethod.getInstance());
+        String url = "https://api.chess.com/pub/player/"+sharedString+"/games/2023/10";
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+
+                    JSONArray gamesArray = response.getJSONArray("games");
+                    for(int i = 0; i< gamesArray.length(); i++){
+                        JSONObject gameObject = gamesArray.getJSONObject(i);
+
+                        String url = gameObject.getString("url");
+                        String url1 = gameObject.getString("url");
+                        String gameUrl = "<a href='" + url + "'>Live game here</a>";
+
+
+                        String htmlContent = gameUrl;
+                        text.setText(Html.fromHtml(htmlContent, Html.FROM_HTML_MODE_COMPACT));
+                    }
+
+
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                text.setText("error");
+            }
+
+        });
+
+
+        RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
+        requestQueue.add(jsonObjectRequest);
+        return view;
+    }
+    private String formatDate(long timestamp) {
+        Date date = new Date(timestamp * 1000);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return sdf.format(date);
     }
 
     public void onBackPressed() {

@@ -92,48 +92,24 @@ public class HeaderProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_header_profile, container, false);
-        TabLayout tabLayout = view.findViewById(R.id.tab_layout);
+
         ViewPager2 viewPager2 = view.findViewById(R.id.viewpager);
         ImageView navbar=view.findViewById(R.id.navbar);
-
-
-        tabLayout.addTab(tabLayout.newTab().setText("Analytic"));
-        tabLayout.addTab(tabLayout.newTab().setText("Save"));
-        tabLayout.addTab(tabLayout.newTab().setText("Courses"));
 
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         AdapterProfile adapterProfile = new AdapterProfile(fragmentManager, getLifecycle());
         viewPager2.setAdapter(adapterProfile);
 
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager2.setCurrentItem(tab.getPosition());
-            }
 
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
-        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
-            @Override
-            public void onPageSelected(int position) {
-                tabLayout.selectTab(tabLayout.getTabAt(position));
-            }
-        });
         ShareData shareData = ShareData.getInstance();
         String sharedString = shareData.getSharedString();
         TextView text = view.findViewById(R.id.name_profile);
-        ImageView imageView = view.findViewById(R.id.img);        TextView follow = view.findViewById(R.id.followers);
+        ImageView imageView = view.findViewById(R.id.img);
+//        TextView follow = view.findViewById(R.id.followers);
 
 
         String url = "https://api.chess.com/pub/player/"+sharedString;
+        String status = "https://api.chess.com/pub/player/"+sharedString+"/is-online";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
