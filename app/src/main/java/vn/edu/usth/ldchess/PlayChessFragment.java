@@ -1,7 +1,6 @@
 package vn.edu.usth.ldchess;
 
-import android.content.Intent;
-import android.media.Image;
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,18 +8,14 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-
-import java.util.HashMap;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Home_Explore_Content#newInstance} factory method to
+ * Use the {@link PlayChessFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Home_Explore_Content extends Fragment {
+public class PlayChessFragment extends Fragment {
 
-    HashMap<Integer, Integer> home_pic=new HashMap<>();
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +25,7 @@ public class Home_Explore_Content extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Home_Explore_Content() {
+    public PlayChessFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +35,11 @@ public class Home_Explore_Content extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Home_Explore_Content.
+     * @return A new instance of fragment PlayChessFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static Home_Explore_Content newInstance(String param1, String param2) {
-        Home_Explore_Content fragment = new Home_Explore_Content();
+    public static PlayChessFragment newInstance(String param1, String param2) {
+        PlayChessFragment fragment = new PlayChessFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,13 +59,9 @@ public class Home_Explore_Content extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Context context=getContext();
+        PlayChess playChess=new PlayChess(context);
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_home__explore__content, container, false);
-
-        return view;
-    }
-
-    public void onBackPressed() {
-        getActivity().finishAffinity();
+        return playChess;
     }
 }
