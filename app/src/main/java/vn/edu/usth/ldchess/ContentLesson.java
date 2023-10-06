@@ -215,9 +215,4 @@ public class ContentLesson extends Fragment {
         ls_title.setText((String)item[0]);
         ls_content.setText((String)item[1]);
     }
-    public void onBackPressed() {
-        List_Lesson list_lesson = new List_Lesson();
-        FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.main,list_lesson).commit();
-    }
 }

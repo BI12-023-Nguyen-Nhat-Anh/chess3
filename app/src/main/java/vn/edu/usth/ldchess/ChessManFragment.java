@@ -172,10 +172,4 @@ public class ChessManFragment extends Fragment {
         title_chess.setText((String)item[3]);
         detail_chess.setText((String)item[4]);
     }
-
-    public void onBackPressed() {
-        List_Chess list_chess = new List_Chess();
-        FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.main,list_chess).commit();
-    }
 }

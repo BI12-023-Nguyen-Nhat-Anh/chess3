@@ -89,15 +89,10 @@
                     >
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/music_pic"
-                        android:layout_alignParentLeft="true"
-                        android:adjustViewBounds="true"
-
-                        android:layout_weight="0"
-
-                        />
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/chien_thuat"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -189,14 +184,10 @@
                     >
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/music_pic"
-                        android:layout_alignParentLeft="true"
-                        android:adjustViewBounds="true"
-
-                        android:layout_weight="0"
-
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/intro_img"
+                        android:scaleType="centerCrop"
                         />
 
                     <LinearLayout
@@ -285,19 +276,13 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/lesson2"
                     android:layout_marginTop="24dp"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/music_pic"
-                        android:layout_alignParentLeft="true"
-                        android:adjustViewBounds="true"
-
-                        android:layout_weight="0"
-
-                        />
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/attack_defend"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -385,19 +370,13 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/lesson3"
                     android:layout_marginTop="24dp"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/music_pic"
-                        android:layout_alignParentLeft="true"
-                        android:adjustViewBounds="true"
-
-                        android:layout_weight="0"
-
-                        />
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/castling"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -489,15 +468,10 @@
                     >
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/music_pic"
-                        android:layout_alignParentLeft="true"
-                        android:adjustViewBounds="true"
-
-                        android:layout_weight="0"
-
-                        />
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/draw"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -590,15 +564,10 @@
                     >
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/music_pic"
-                        android:layout_alignParentLeft="true"
-                        android:adjustViewBounds="true"
-
-                        android:layout_weight="0"
-
-                        />
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/statement"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"

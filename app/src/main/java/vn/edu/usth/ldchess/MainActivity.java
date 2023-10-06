@@ -53,12 +53,12 @@ public class MainActivity extends AppCompatActivity {
                         fragmentListChess.beginTransaction().replace(R.id.main, list_chess, "List chess").commit();
                         break;
                     case 2:
-                        PlayChessFragment playChessFragment=new PlayChessFragment();
-                        FragmentManager fragmentChes=getSupportFragmentManager();
-                        fragmentChes.beginTransaction().replace(R.id.main, playChessFragment).commit();
-//                        List_Lesson list_lesson = new List_Lesson();
-//                        FragmentManager fragmenListLesson = getSupportFragmentManager();
-//                        fragmenListLesson.beginTransaction().replace(R.id.main, list_lesson, "List Lesson").commit();
+//                        PlayChessFragment playChessFragment=new PlayChessFragment();
+//                        FragmentManager fragmentChes=getSupportFragmentManager();
+//                        fragmentChes.beginTransaction().replace(R.id.main, playChessFragment).commit();
+                        List_Lesson list_lesson = new List_Lesson();
+                        FragmentManager fragmenListLesson = getSupportFragmentManager();
+                        fragmenListLesson.beginTransaction().replace(R.id.main, list_lesson, "List Lesson").commit();
                         break;
                     case 3:
                         HeaderProfileFragment profile = new HeaderProfileFragment();
@@ -115,13 +115,9 @@ public class MainActivity extends AppCompatActivity {
             HeaderProfileFragment profile = (HeaderProfileFragment) currentFragment;
             profile.onBackPressed();
         }
-        else if(currentFragment instanceof ChessManFragment){
-            ChessManFragment ChessMan = (ChessManFragment) currentFragment;
-            ChessMan.onBackPressed();
-        }
-        else if(currentFragment instanceof ContentLesson){
-            ContentLesson contentLesson = (ContentLesson) currentFragment;
-            contentLesson.onBackPressed();
+        else if(currentFragment instanceof SaveFragment){
+            SaveFragment save = (SaveFragment) currentFragment;
+            save.onBackPressed();
         }
         else {
             super.onBackPressed();

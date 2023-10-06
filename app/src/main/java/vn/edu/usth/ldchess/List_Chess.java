@@ -123,7 +123,7 @@ public class List_Chess extends Fragment {
         chess_man.setChessPiece(num);
         FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.main, chess_man, "Chess main")
-                .commit();
+                .addToBackStack(null).commit();
         hide_fragment();
     }
     public void hide_fragment(){

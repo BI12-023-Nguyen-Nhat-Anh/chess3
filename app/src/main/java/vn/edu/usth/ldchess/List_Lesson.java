@@ -123,7 +123,7 @@ public class List_Lesson extends Fragment {
         contentLesson.setContentLesson(num);
         FragmentManager fragmentManager=requireActivity().getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.main, contentLesson, "Content Lesson")
-                .commit();
+                .addToBackStack(null).commit();
         hide_fragment();
     }
     public void hide_fragment(){
