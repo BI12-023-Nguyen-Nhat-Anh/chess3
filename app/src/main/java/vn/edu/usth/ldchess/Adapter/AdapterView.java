@@ -9,8 +9,6 @@ import vn.edu.usth.ldchess.HeaderProfileFragment;
 import vn.edu.usth.ldchess.Home_Explore_Content;
 import vn.edu.usth.ldchess.List_Chess;
 import vn.edu.usth.ldchess.List_Lesson;
-import vn.edu.usth.ldchess.PlayChess;
-import vn.edu.usth.ldchess.PlayChessFragment;
 
 public class AdapterView extends FragmentStateAdapter {
     public AdapterView(@NonNull FragmentActivity fragmentActivity) {

@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background">#151a22</color>
     <color name="invisible">#00000000</color>
+    <color name="blue">#2d3542</color>
 </resources>
